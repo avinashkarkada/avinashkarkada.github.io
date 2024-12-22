@@ -833,6 +833,21 @@ properly.
 	text-align: center !important;
 }
 
+/* Make the #publications section lighter */
+section#publications {
+  background-color: #ffffff; /* or some lighter color, e.g. #f9f9f9 */
+  color: #000000;           /* ensure text is dark enough to read */
+  padding: 40px 0;          /* optional: add vertical padding */
+}
+
+/* Optionally style publication titles and paragraphs */
+section#publications .pub-heading {
+  color: #333;               /* slightly darker text for headings */
+  font-weight: bold;
+}
+section#publications p {
+  color: #555;               /* mid-tone for body text */
+}
 
 
 
