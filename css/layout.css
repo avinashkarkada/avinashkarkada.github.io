@@ -1026,4 +1026,12 @@ section#publications .pub-heading {
 section#publications p {
   color: #555;               /* mid-tone for body text */
 }
+.pub-heading em {
+  font-style: italic;   /* keep italics */
+  font-size: inherit;   /* same size as the rest of the title */
+  font-family: inherit; /* same font as the rest of the title */
+  font-weight: inherit; /* same weight as the rest of the title */
+  line-height: inherit; /* keeps vertical spacing consistent */
+}
+
 
