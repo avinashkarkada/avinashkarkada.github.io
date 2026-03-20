@@ -29,6 +29,317 @@
    <!-- Changed to SVG Favicon -->
    <link rel="icon" type="image/svg+xml" href="dna_clipart.svg">
 
+
+   <style>
+      #skills {
+         background: #fff;
+         padding-top: 0;
+         padding-bottom: 72px;
+         overflow: hidden;
+         border-top: 1px solid #e8e8e8;
+      }
+
+      #certificates {
+         background: #f5f5f5;
+         padding-top: 0;
+         padding-bottom: 72px;
+         overflow: hidden;
+         border-top: 1px solid #e8e8e8;
+      }
+
+      #publications {
+         background: #fff;
+         padding-top: 0;
+         padding-bottom: 72px;
+         overflow: hidden;
+         border-top: 1px solid #e8e8e8;
+      }
+
+
+      #resume {
+         padding-bottom: 34px;
+      }
+
+      #resume .row.education {
+         padding-bottom: 0;
+         margin-bottom: 0;
+      }
+
+      #resume .main-col .row.item:last-child {
+         margin-bottom: 0;
+      }
+
+      #work h1 {
+         font: 18px/24px 'opensans-bold', sans-serif;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+      }
+
+      #work h1 span {
+         border-bottom: 3px solid #11ABB0;
+         padding-bottom: 6px;
+      }
+
+      #work .header-col {
+         padding-top: 9px;
+      }
+
+      #work .main-col {
+         padding-right: 10%;
+      }
+
+      #skills h1,
+      #certificates h1,
+      #publications h1 {
+         font: 18px/24px 'opensans-bold', sans-serif;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+      }
+
+      #skills h1 span,
+      #certificates h1 span,
+      #publications h1 span {
+         border-bottom: 3px solid #11ABB0;
+         padding-bottom: 6px;
+      }
+
+
+      #skills .header-col {
+         width: 13%;
+      }
+
+      #skills .main-col {
+         width: 87%;
+         padding-right: 2%;
+      }
+
+      #skills .section-grid {
+         display: block;
+         column-count: 2;
+         column-gap: 22px;
+      }
+
+      #skills .info-card {
+         display: inline-block;
+         width: 100%;
+         margin: 0 0 22px;
+         vertical-align: top;
+         break-inside: avoid;
+         -webkit-column-break-inside: avoid;
+         page-break-inside: avoid;
+      }
+
+      #skills .tag-list {
+         gap: 8px;
+      }
+
+      #skills .tag {
+         padding: 7px 10px;
+         font-size: 13px;
+      }
+
+      #certificates .header-col {
+         width: 20%;
+      }
+
+      #certificates .main-col {
+         width: 80%;
+      }
+
+      #certificates .cert-grid {
+         grid-template-columns: repeat(2, minmax(320px, 1fr));
+         gap: 18px;
+      }
+
+      #certificates .course-tags {
+         gap: 8px;
+      }
+
+      #certificates .course-tag {
+         padding: 7px 11px;
+         font-size: 13px;
+      }
+
+      #skills .row,
+      #certificates .row,
+      #publications .row {
+         margin-top: 0;
+         margin-bottom: 0;
+      }
+
+      #skills .row.skill,
+      #certificates .row.work {
+         padding-top: 48px;
+      }
+
+      #publications .row.publications {
+         padding-top: 40px;
+      }
+
+      #skills .header-col,
+      #certificates .header-col,
+      #publications .header-col {
+         padding-top: 9px;
+      }
+
+      #skills .main-col,
+      #certificates .main-col,
+      #publications .main-col {
+         padding-top: 0;
+         padding-right: 10%;
+      }
+
+      #skills .main-col {
+         padding-right: 2%;
+      }
+
+      #skills .header-col h1,
+      #certificates .header-col h1,
+      #publications .header-col h1,
+      #skills .main-col > :first-child,
+      #certificates .main-col > :first-child,
+      #publications .main-col > :first-child {
+         margin-top: 0;
+      }
+
+      .section-intro {
+         color: #6e7881;
+         margin: 0 0 28px 0;
+         line-height: 1.8;
+      }
+
+      .section-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+         gap: 22px;
+      }
+
+      .info-card {
+         background: #fafafa;
+         border: 1px solid #e3e8ee;
+         border-radius: 16px;
+         padding: 22px 22px 18px;
+         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+         height: auto;
+         align-self: start;
+      }
+
+      .info-card h3,
+      .cert-block h3,
+      .course-block h3 {
+         color: #313131;
+         font-size: 20px;
+         line-height: 1.3;
+         margin-top: 0;
+         margin-bottom: 16px;
+      }
+
+      .tag-list {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 10px;
+      }
+
+      .tag {
+         display: inline-block;
+         padding: 8px 12px;
+         border-radius: 999px;
+         background: #eef5ff;
+         color: #284b63;
+         font-size: 14px;
+         line-height: 1.4;
+         border: 1px solid #d7e7fb;
+      }
+
+      .cert-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+         gap: 16px;
+         margin-bottom: 28px;
+      }
+
+      .cert-item {
+         background: #fafafa;
+         border: 1px solid #e3e8ee;
+         border-radius: 14px;
+         padding: 16px 18px;
+         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+      }
+
+      .cert-title {
+         display: block;
+         color: #313131;
+         font-weight: 600;
+         margin-bottom: 6px;
+         line-height: 1.5;
+      }
+
+      .cert-org {
+         display: block;
+         color: #6e7881;
+         font-size: 14px;
+         line-height: 1.5;
+      }
+
+      .course-block {
+         margin-top: 6px;
+      }
+
+      .course-tags {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 10px;
+      }
+
+      .course-tag {
+         display: inline-block;
+         padding: 8px 12px;
+         border-radius: 12px;
+         background: #f4f6f8;
+         color: #4f5d6b;
+         font-size: 14px;
+         line-height: 1.4;
+         border: 1px solid #e2e7eb;
+      }
+
+      @media only screen and (max-width: 1100px) {
+         #skills .section-grid {
+            column-count: 1;
+         }
+
+         #certificates .cert-grid {
+            grid-template-columns: 1fr;
+         }
+      }
+
+      @media only screen and (max-width: 900px) {
+         #skills .header-col,
+         #skills .main-col,
+         #certificates .header-col,
+         #certificates .main-col {
+            width: 100%;
+         }
+      }
+
+      @media only screen and (max-width: 767px) {
+         #skills, #certificates, #publications {
+            padding-top: 0;
+            padding-bottom: 54px;
+         }
+
+         #skills .row.skill,
+         #certificates .row.work,
+         #publications .row.publications {
+            padding-top: 36px;
+         }
+
+         .info-card,
+         .cert-item {
+            padding: 18px;
+         }
+      }
+</style>
+
 </head>
 
 <body>
@@ -45,15 +356,18 @@
             <li><a class="smoothscroll" href="#about">About</a></li>
             <li><a class="smoothscroll" href="#resume">Education</a></li>
             <li><a class="smoothscroll" href="#work">Works</a></li>
+            <li><a class="smoothscroll" href="#skills">Skills</a></li>
+            <li><a class="smoothscroll" href="#certificates">Certificates &amp; Courses</a></li>
             <li><a class="smoothscroll" href="#publications">Publications</a></li>
-         </ul> <!-- end #nav -->
+         </ul>
+ <!-- end #nav -->
       </nav> <!-- end #nav-wrap -->
 
       <div class="row banner">
          <div class="banner-text">
             <h1 class="responsive-headline">Hello, </h1>
             <h2 class="namadeya">I'm Avinash Karkada Ashok</h2>
-            <h3>Biotechnology | Bioinformatics</h3>
+            <h3>Biotechnology | Bioinformatics | Computational Biology</h3>
             <hr />
             <ul class="social">
                <li>
@@ -106,7 +420,7 @@
             <div class="row">
                <div class="columns download">
                   <p>
-                     <a href="https://drive.google.com/file/d/1xC9b0YX0luYE5HkfSVOjXdXyYz_GNUgz/view?usp=sharing" class="button">
+                     <a href="files/Avinash_Karkada_Ashok_Resume.pdf" class="button" download>
                         <i class="fa fa-download"></i>Download Resume
                      </a>
                   </p>
@@ -164,7 +478,7 @@
             <div class="row item">
                <div class="twelve columns">
                   <h3>JOHNS HOPKINS SCHOOL OF MEDICINE</h3>
-                  <p class="info">Research Assistant <span>&bull;</span> 
+                  <p class="info">Bioinformatics Engineer <span>&bull;</span> 
                      <em class="date">09/2024 - Present</em>
                   </p>
                   <p align="justify">
@@ -202,7 +516,7 @@
             <div class="row item">
                <div class="twelve columns">
                   <h3>INDIAN INSTITUTE OF SCIENCE</h3>
-                  <p class="info">Research Assistant <span>&bull;</span> 
+                  <p class="info">Junior Research Fellow <span>&bull;</span> 
                      <em class="date">11/2023 - 08/2024</em>
                   </p>
                   <p align="justify">
@@ -253,20 +567,6 @@
                </div>
             </div> <!-- item end -->
 
-            <!-- 5: LAB OF BIOINFORMATICS AND PROTEOMICS, SIT, TUMKUR, INDIA -->
-            <div class="row item">
-               <div class="twelve columns">
-                  <h3>LAB OF BIOINFORMATICS AND PROTEOMICS, SIT, TUMKUR, INDIA</h3>
-                  <p class="info">Research assistant <span>&bull;</span> 
-                     <em class="date">05/2021 - 07/2023</em>
-                  </p>
-                  <p align="justify">
-                     ICP-MS analysis of rare elements in schizophrenic patients. Comparative
-                     proteomic analysis of Withaferin-A treated MPTP mouse models of Parkinson’s disease.
-                  </p>
-               </div>
-            </div> <!-- item end -->
-
             <!-- 6: PRISTINE ORGANICS, BANGALORE, INDIA -->
             <div class="row item">
                <div class="twelve columns">
@@ -284,6 +584,268 @@
       </div> <!-- .row.work -->
    </section>
    <!-- Work Section End -->
+
+
+   <!-- Skills Section
+   ================================================== -->
+   <section id="skills">
+      <div class="row skill">
+         <div class="three columns header-col">
+            <h1><span>Skills</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+            <div class="section-grid">
+               <div class="info-card">
+                  <h3>Programming and Platforms</h3>
+                  <div class="tag-list">
+                     <span class="tag">Python</span>
+                     <span class="tag">R</span>
+                     <span class="tag">Bash</span>
+                     <span class="tag">SQL</span>
+                     <span class="tag">Java</span>
+                     <span class="tag">Git</span>
+                     <span class="tag">GitHub</span>
+                     <span class="tag">Linux</span>
+                     <span class="tag">Unix</span>
+                     <span class="tag">HPC</span>
+                     <span class="tag">SLURM</span>
+                     <span class="tag">AWS</span>
+                     <span class="tag">EC2</span>
+                     <span class="tag">S3</span>
+                     <span class="tag">Docker</span>
+                     <span class="tag">Singularity</span>
+                     <span class="tag">Conda</span>
+                     <span class="tag">Mamba</span>
+                     <span class="tag">Jupyter</span>
+                     <span class="tag">R Markdown</span>
+                     <span class="tag">Quarto</span>
+                     <span class="tag">Shiny</span>
+                     <span class="tag">VS Code</span>
+                     <span class="tag">RStudio</span>
+                  </div>
+               </div>
+
+               <div class="info-card">
+                  <h3>Bioinformatics, NGS, and Omics</h3>
+                  <div class="tag-list">
+                     <span class="tag">PhIP-seq</span>
+                     <span class="tag">RNA-seq</span>
+                     <span class="tag">scRNA-seq</span>
+                     <span class="tag">ChIP-seq</span>
+                     <span class="tag">WGS</span>
+                     <span class="tag">Biopython</span>
+                     <span class="tag">Bioconductor</span>
+                     <span class="tag">SAMtools</span>
+                     <span class="tag">BCFtools</span>
+                     <span class="tag">BEDTools</span>
+                     <span class="tag">Bowtie</span>
+                     <span class="tag">Bowtie2</span>
+                     <span class="tag">BWA</span>
+                     <span class="tag">Minimap2</span>
+                     <span class="tag">Kallisto</span>
+                     <span class="tag">Salmon</span>
+                     <span class="tag">STAR</span>
+                     <span class="tag">HISAT2</span>
+                     <span class="tag">Cutadapt</span>
+                     <span class="tag">Trimmomatic</span>
+                     <span class="tag">FastQC</span>
+                     <span class="tag">GATK</span>
+                     <span class="tag">IGV</span>
+                     <span class="tag">SRA Toolkit</span>
+                     <span class="tag">BLAST</span>
+                     <span class="tag">Clustal Omega</span>
+                     <span class="tag">MAFFT</span>
+                     <span class="tag">EMBOSS</span>
+                     <span class="tag">CD-HIT</span>
+                     <span class="tag">HMMER</span>
+                     <span class="tag">edgeR</span>
+                     <span class="tag">DESeq2</span>
+                     <span class="tag">limma</span>
+                     <span class="tag">Seurat</span>
+                     <span class="tag">Scanpy</span>
+                     <span class="tag">MEGA</span>
+                     <span class="tag">IQ-TREE</span>
+                     <span class="tag">Comparative genomics</span>
+                     <span class="tag">Genome informatics</span>
+                     <span class="tag">Epitope mapping</span>
+                  </div>
+               </div>
+
+               <div class="info-card">
+                  <h3>Computational Biology and Data Science</h3>
+                  <div class="tag-list">
+                     <span class="tag">pandas</span>
+                     <span class="tag">NumPy</span>
+                     <span class="tag">SciPy</span>
+                     <span class="tag">scikit-learn</span>
+                     <span class="tag">XGBoost</span>
+                     <span class="tag">matplotlib</span>
+                     <span class="tag">plotly</span>
+                     <span class="tag">ggplot2</span>
+                     <span class="tag">dplyr</span>
+                     <span class="tag">tidyr</span>
+                     <span class="tag">randomForest</span>
+                     <span class="tag">SVM</span>
+                     <span class="tag">LASSO</span>
+                     <span class="tag">PCA</span>
+                     <span class="tag">UMAP</span>
+                     <span class="tag">t-SNE</span>
+                     <span class="tag">Clustering</span>
+                     <span class="tag">Differential expression</span>
+                     <span class="tag">Enrichment analysis</span>
+                     <span class="tag">Pathway analysis</span>
+                     <span class="tag">Network analysis</span>
+                     <span class="tag">Statistical data analysis</span>
+                     <span class="tag">Sequence-space analysis</span>
+                  </div>
+               </div>
+
+               <div class="info-card">
+                  <h3>Workflow and Reproducibility</h3>
+                  <div class="tag-list">
+                     <span class="tag">Snakemake</span>
+                     <span class="tag">Latch</span>
+                     <span class="tag">Docker</span>
+                     <span class="tag">Singularity</span>
+                  </div>
+               </div>
+
+               <div class="info-card">
+                  <h3>Structural Biology, Docking, and Molecular Modeling</h3>
+                  <div class="tag-list">
+                     <span class="tag">PyMOL</span>
+                     <span class="tag">UCSF ChimeraX</span>
+                     <span class="tag">Chimera</span>
+                     <span class="tag">VMD</span>
+                     <span class="tag">MODELLER</span>
+                     <span class="tag">AlphaFold</span>
+                     <span class="tag">ESMFold</span>
+                     <span class="tag">Rosetta</span>
+                     <span class="tag">HADDOCK</span>
+                     <span class="tag">AutoDock</span>
+                     <span class="tag">AutoDock Vina</span>
+                     <span class="tag">GROMACS</span>
+                     <span class="tag">AMBER</span>
+                     <span class="tag">gmx_MMPBSA</span>
+                     <span class="tag">FoldX</span>
+                     <span class="tag">Maestro</span>
+                     <span class="tag">Schrödinger</span>
+                     <span class="tag">CP2K</span>
+                     <span class="tag">Gaussian</span>
+                     <span class="tag">ORCA</span>
+                     <span class="tag">RDKit</span>
+                     <span class="tag">Open Babel</span>
+                     <span class="tag">Molecular dynamics</span>
+                     <span class="tag">Protein structure prediction</span>
+                     <span class="tag">Structural mapping</span>
+                     <span class="tag">Virtual screening</span>
+                     <span class="tag">Free energy analysis</span>
+                     <span class="tag">MM/PBSA</span>
+                     <span class="tag">ADMET</span>
+                     <span class="tag">Protein-protein docking</span>
+                     <span class="tag">Protein-ligand docking</span>
+                     <span class="tag">Protein-DNA docking</span>
+                     <span class="tag">Nucleic acid docking</span>
+                     <span class="tag">Binder design</span>
+                  </div>
+               </div>
+
+               <div class="info-card">
+                  <h3>Visualization and Reporting</h3>
+                  <div class="tag-list">
+                     <span class="tag">ggplot2</span>
+                     <span class="tag">plotly</span>
+                     <span class="tag">GraphPad Prism</span>
+                     <span class="tag">Excel</span>
+                     <span class="tag">PowerPoint</span>
+                     <span class="tag">BioRender</span>
+                     <span class="tag">LaTeX</span>
+                     <span class="tag">R Markdown</span>
+                     <span class="tag">Quarto</span>
+                     <span class="tag">Shiny</span>
+                     <span class="tag">Dash</span>
+                     <span class="tag">Cytoscape</span>
+                     <span class="tag">UCSC Genome Browser</span>
+                     <span class="tag">Ensembl Genome Browser</span>
+                  </div>
+               </div>
+
+               <div class="info-card">
+                  <h3>Wet Lab Techniques</h3>
+                  <div class="tag-list">
+                     <span class="tag">Bacterial cell culture</span>
+                     <span class="tag">Agarose gel electrophoresis</span>
+                     <span class="tag">PCR</span>
+                     <span class="tag">SDS-PAGE</span>
+                     <span class="tag">Western blot</span>
+                     <span class="tag">Sample handling and QC</span>
+                     <span class="tag">Basic ELISA handling</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- Skills Section End -->
+
+   <!-- Certificates & Relevant Courses Section
+   ================================================== -->
+   <section id="certificates">
+      <div class="row work">
+         <div class="three columns header-col">
+            <h1><span>Certificates</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+            <div class="cert-block">
+               <h3>Certificates</h3>
+               <div class="cert-grid">
+                  <div class="cert-item"><span class="cert-title">Epigenetic Control of Gene Expression</span><span class="cert-org">University of Melbourne</span></div>
+                  <div class="cert-item"><span class="cert-title">SARS-CoV-2 Protein Modeling and Drug Docking</span><span class="cert-org">Coursera Project Network</span></div>
+                  <div class="cert-item"><span class="cert-title">Algorithms for DNA Sequencing</span><span class="cert-org">Johns Hopkins University</span></div>
+                  <div class="cert-item"><span class="cert-title">Drug Discovery</span><span class="cert-org">UC San Diego</span></div>
+                  <div class="cert-item"><span class="cert-title">Python for Genomic Data Science</span><span class="cert-org">Johns Hopkins University</span></div>
+                  <div class="cert-item"><span class="cert-title">Introduction to Genomic Technologies</span><span class="cert-org">Johns Hopkins University</span></div>
+                  <div class="cert-item"><span class="cert-title">Introduction to the Biology of Cancer</span><span class="cert-org">Johns Hopkins University</span></div>
+                  <div class="cert-item"><span class="cert-title">Summer School on Machine Learning in Bioinformatics</span><span class="cert-org">HSE University</span></div>
+                  <div class="cert-item"><span class="cert-title">Antibody Purification</span><span class="cert-org">Siddaganga Institute of Technology</span></div>
+                  <div class="cert-item"><span class="cert-title">Artificial Intelligence in Drug Discovery</span><span class="cert-org">CSIR-NEIST</span></div>
+                  <div class="cert-item"><span class="cert-title">Technical Hands-On Workshop, Molecular Docking</span><span class="cert-org">BDG Lifesciences</span></div>
+               </div>
+            </div>
+
+            <div class="course-block">
+               <h3>Relevant Courses</h3>
+               <div class="course-tags">
+                  <span class="course-tag">Introduction to Bioinformatics</span>
+                  <span class="course-tag">Algorithms for Bioinformatics</span>
+                  <span class="course-tag">Applied Machine Learning</span>
+                  <span class="course-tag">Artificial Intelligence</span>
+                  <span class="course-tag">Gene Expression Data Analysis and Visualization</span>
+                  <span class="course-tag">Protein Bioinformatics</span>
+                  <span class="course-tag">Practical Computer Concepts for Bioinformatics</span>
+                  <span class="course-tag">Molecular Basis of Pharmacology</span>
+                  <span class="course-tag">Molecular Biology</span>
+                  <span class="course-tag">Epigenetics, Gene Organization and Expression</span>
+                  <span class="course-tag">Genomic and Personalized Medicine</span>
+                  <span class="course-tag">Biostatistics and Biomodelling</span>
+                  <span class="course-tag">Biochemistry</span>
+                  <span class="course-tag">Microbiology</span>
+                  <span class="course-tag">Genetics and Genetic Engineering</span>
+                  <span class="course-tag">Immunology and Immunotechnology</span>
+                  <span class="course-tag">Biomolecular Simulations</span>
+                  <span class="course-tag">Programming with Python</span>
+                  <span class="course-tag">Genomics and Proteomics Data Analytics</span>
+                  <span class="course-tag">Enzyme Technology</span>
+                  <span class="course-tag">Clinical Trials and Data Management</span>
+                  <span class="course-tag">Biopharmaceuticals and Regulatory Affairs</span>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- Certificates & Relevant Courses Section End -->
 
    <!-- Publications Section
    ================================================== -->
@@ -486,7 +1048,7 @@
 
    <!-- JavaScript
    ================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
    <script>
       window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')
    </script>
