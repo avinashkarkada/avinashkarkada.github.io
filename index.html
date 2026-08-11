@@ -4,13 +4,25 @@
    <!-- Basic Page Needs
    ================================================== -->
    <meta charset="utf-8">
-   <title>Avinash Karkada Ashok</title>
-   <meta name="description" content="">
-   <meta name="author" content="">
+   <title>Avinash Karkada Ashok — Bioinformatics Engineer</title>
+   <meta name="description" content="Bioinformatics Engineer at Johns Hopkins School of Medicine. Computational biology, NGS analysis, and reproducible pipelines.">
+   <meta name="author" content="Avinash Karkada Ashok">
+
+   <!-- Open Graph / social link previews -->
+   <meta property="og:type" content="profile">
+   <meta property="og:title" content="Avinash Karkada Ashok — Bioinformatics Engineer">
+   <meta property="og:description" content="Bioinformatics Engineer at Johns Hopkins School of Medicine. Computational biology, NGS analysis, and reproducible pipelines.">
+   <meta property="og:url" content="https://avinashkarkada.github.io/">
+   <meta property="og:image" content="https://avinashkarkada.github.io/images/profilepic.jpg">
+   <meta name="twitter:card" content="summary">
+   <meta name="twitter:title" content="Avinash Karkada Ashok — Bioinformatics Engineer">
+   <meta name="twitter:description" content="Bioinformatics Engineer at Johns Hopkins School of Medicine. Computational biology, NGS analysis, and reproducible pipelines.">
+   <meta name="twitter:image" content="https://avinashkarkada.github.io/images/profilepic.jpg">
+   <link rel="canonical" href="https://avinashkarkada.github.io/">
 
    <!-- Mobile Specific Metas
    ================================================== -->
-   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
 
    <!-- CSS
    ================================================== -->
@@ -53,6 +65,272 @@
          padding-bottom: 72px;
          overflow: hidden;
          border-top: 1px solid #e8e8e8;
+      }
+
+      #software {
+         background: #f5f5f5;
+         padding-top: 0;
+         padding-bottom: 72px;
+         overflow: hidden;
+         border-top: 1px solid #e8e8e8;
+      }
+
+      #awards {
+         background: #f5f5f5;
+         padding-top: 0;
+         padding-bottom: 72px;
+         overflow: hidden;
+         border-top: 1px solid #e8e8e8;
+      }
+
+      #software h1,
+      #awards h1 {
+         font: 18px/24px 'opensans-bold', sans-serif;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+      }
+
+      #software h1 span,
+      #awards h1 span {
+         display: inline-block;
+         border-bottom: 3px solid #11ABB0;
+         padding-bottom: 6px;
+      }
+
+      #software .header-col,
+      #awards .header-col {
+         padding-top: 9px;
+      }
+
+      #software .main-col,
+      #awards .main-col {
+         padding-top: 0;
+         padding-right: 4%;
+      }
+
+      #software .row.software,
+      #awards .row.awards {
+         padding-top: 48px;
+         margin-top: 0;
+         margin-bottom: 0;
+      }
+
+      .proj-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+         gap: 20px;
+      }
+
+      .proj-card {
+         background: #fff;
+         border: 1px solid #e3e8ee;
+         border-radius: 16px;
+         padding: 22px 24px 18px;
+         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+         display: flex;
+         flex-direction: column;
+      }
+
+      .proj-card h3 {
+         color: #313131;
+         font-size: 19px;
+         line-height: 1.35;
+         margin: 0 0 12px;
+      }
+
+      .proj-badge {
+         display: inline-block;
+         margin-left: 8px;
+         padding: 3px 9px;
+         border-radius: 999px;
+         background: #f0f2f4;
+         border: 1px solid #e2e7eb;
+         color: #6e7881;
+         font: 11px/1.6 'opensans-semibold', sans-serif;
+         text-transform: none;
+         letter-spacing: 0;
+         vertical-align: middle;
+         white-space: nowrap;
+      }
+
+      .proj-desc {
+         color: #6e7881;
+         font-size: 15px;
+         line-height: 1.75;
+         margin: 0 0 16px;
+         flex: 1 1 auto;
+         text-align: justify;
+      }
+
+      .proj-card code,
+      .misc-list code {
+         background: #f0f3f6;
+         border-radius: 4px;
+         padding: 1px 5px;
+         font-size: 13px;
+         color: #4f5d6b;
+      }
+
+      .proj-links {
+         margin: 0;
+         display: flex;
+         align-items: center;
+         flex-wrap: wrap;
+         gap: 12px;
+      }
+
+      .proj-links a {
+         color: #11ABB0;
+         font: 14px/1.6 'opensans-semibold', sans-serif;
+         border-bottom: 1px solid rgba(17, 171, 176, 0.35);
+      }
+
+      .proj-links a:hover {
+         color: #0D8386;
+         border-bottom-color: #0D8386;
+      }
+
+      .proj-meta {
+         color: #97a1ab;
+         font-size: 13px;
+      }
+
+      .proj-misc {
+         margin-top: 32px;
+      }
+
+      .proj-misc h3 {
+         color: #313131;
+         font-size: 18px;
+         margin: 0 0 14px;
+      }
+
+      .misc-list {
+         list-style: none;
+         margin: 0;
+         padding: 0;
+      }
+
+      .misc-list li {
+         color: #6e7881;
+         font-size: 15px;
+         line-height: 1.8;
+         padding: 6px 0;
+         border-bottom: 1px solid #e8ecef;
+      }
+
+      .misc-list li:last-child {
+         border-bottom: none;
+      }
+
+      .misc-list a {
+         color: #11ABB0;
+         font-family: 'opensans-semibold', sans-serif;
+      }
+
+      .misc-list a:hover {
+         color: #0D8386;
+      }
+
+      .award-list {
+         list-style: none;
+         margin: 0 0 28px;
+         padding: 0;
+      }
+
+      .award-list li {
+         position: relative;
+         color: #6e7881;
+         font-size: 15px;
+         line-height: 1.8;
+         padding: 0 0 14px 22px;
+      }
+
+      .award-list li:before {
+         content: "";
+         position: absolute;
+         left: 0;
+         top: 11px;
+         width: 7px;
+         height: 7px;
+         border-radius: 50%;
+         background: #11ABB0;
+      }
+
+      .award-list strong {
+         color: #313131;
+         font-family: 'opensans-semibold', sans-serif;
+         font-weight: normal;
+      }
+
+      #contact {
+         background: #191919;
+         padding-top: 66px;
+         padding-bottom: 60px;
+      }
+
+      #contact .section-head {
+         margin-bottom: 42px;
+      }
+
+      #contact h1 {
+         font: 18px/24px 'opensans-bold', sans-serif;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+         color: #fff;
+         margin-bottom: 6px;
+      }
+
+      /* the CeeVee template hides this span and floats a 72px FontAwesome
+         envelope in via :before -- undo both */
+      #contact h1 span {
+         display: inline-block;
+         border-bottom: 3px solid #11ABB0;
+         padding-bottom: 6px;
+      }
+
+      #contact h1:before {
+         content: none;
+         padding-right: 0;
+         float: none;
+         font-size: inherit;
+         line-height: inherit;
+      }
+
+      #contact p.lead {
+         color: #a3a3a3;
+         font: 16px/1.8 'opensans-light', sans-serif;
+         margin: 22px 0 0;
+         max-width: 620px;
+      }
+
+      #contact a.contact-email {
+         color: #11ABB0;
+         font: 20px/1.6 'opensans-semibold', sans-serif;
+         border-bottom: 1px solid rgba(17, 171, 176, 0.4);
+      }
+
+      #contact a.contact-email:hover {
+         color: #fff;
+         border-bottom-color: #fff;
+      }
+
+      .contact-links {
+         margin: 24px 0 0;
+         padding: 0;
+         list-style: none;
+         display: flex;
+         flex-wrap: wrap;
+         gap: 22px;
+      }
+
+      .contact-links a {
+         color: #a3a3a3;
+         font-size: 15px;
+      }
+
+      .contact-links a:hover {
+         color: #11ABB0;
       }
 
 
@@ -319,23 +597,44 @@
          #certificates .main-col {
             width: 100%;
          }
+
+         .proj-grid {
+            grid-template-columns: 1fr;
+         }
       }
 
       @media only screen and (max-width: 767px) {
-         #skills, #certificates, #publications {
+         #skills, #certificates, #publications, #software, #awards {
             padding-top: 0;
             padding-bottom: 54px;
          }
 
          #skills .row.skill,
          #certificates .row.work,
-         #publications .row.publications {
+         #publications .row.publications,
+         #software .row.software,
+         #awards .row.awards {
             padding-top: 36px;
          }
 
          .info-card,
-         .cert-item {
+         .cert-item,
+         .proj-card {
             padding: 18px;
+         }
+
+         #software .main-col,
+         #awards .main-col {
+            padding-right: 0;
+         }
+
+         .proj-desc {
+            text-align: left;
+         }
+
+         #contact {
+            padding-top: 48px;
+            padding-bottom: 48px;
          }
       }
 </style>
@@ -356,9 +655,12 @@
             <li><a class="smoothscroll" href="#about">About</a></li>
             <li><a class="smoothscroll" href="#resume">Education</a></li>
             <li><a class="smoothscroll" href="#work">Works</a></li>
+            <li><a class="smoothscroll" href="#software">Software</a></li>
             <li><a class="smoothscroll" href="#skills">Skills</a></li>
             <li><a class="smoothscroll" href="#certificates">Certificates &amp; Courses</a></li>
             <li><a class="smoothscroll" href="#publications">Publications</a></li>
+            <li><a class="smoothscroll" href="#awards">Awards &amp; Service</a></li>
+            <li><a class="smoothscroll" href="#contact">Contact</a></li>
          </ul>
  <!-- end #nav -->
       </nav> <!-- end #nav-wrap -->
@@ -407,20 +709,19 @@
          <div class="nine columns main-col">
             <h2>About Me</h2>
             <p align="justify">
-               I am a computational biologist with an M.S. in Bioinformatics at Johns Hopkins University with a passion for working 
-               at the intersection of biology, data, and software engineering. I have experience in bioinformatics and omics analytics 
-               (NGS and immune profiling), biostatistics/visualization, as well as ML-driven discovery with a strong focus on reproducibility 
-               using git, Linux/HPC and cloud environments. I also have a background in drug discovery and structural biology/molecular 
-               modeling/molecular dynamics simulations, providing a computational chemistry perspective where appropriate. I have 
-               contributed across academic and industry settings, collaborate well with cross-functional teams, and care deeply about 
-               rigorous, biologically grounded analysis, from experimental context to interpretation and communication of results. 
-               I am also a published researcher and reviewer.
+               I am a computational biologist with an M.S. in Bioinformatics from Johns Hopkins University with a passion for working
+               at the intersection of biology, data, and software engineering. I have experience in bioinformatics and omics analytics
+               (NGS and immune profiling), biostatistics/visualization, as well as ML-driven discovery with a strong focus on reproducibility
+               using git, Linux/HPC and cloud environments. I also have a background in drug discovery and structural biology/molecular
+               modeling/molecular dynamics simulations, providing a computational chemistry perspective where appropriate. I have
+               contributed across academic and industry settings, collaborate well with cross-functional teams, and care deeply about
+               rigorous, biologically grounded analysis, from experimental context to interpretation and communication of results.
             </p>
 
             <div class="row">
                <div class="columns download">
                   <p>
-                     <a href="files/Avinash_Karkada_Ashok_Resume.pdf" class="button" download>
+                     <a href="files/Avinash_Karkada_Ashok_CV.pdf" class="button" download>
                         <i class="fa fa-download"></i>Download Resume
                      </a>
                   </p>
@@ -444,17 +745,17 @@
             <div class="row item">
                <div class="twelve columns">
                   <h3>Master of Science, Johns Hopkins University</h3>
-                  <p class="info">Bioinformatics <span>&bull;</span> 
-                     <em class="date">2024 - Present</em>
+                  <p class="info">Bioinformatics <span>&bull;</span>
+                     <em class="date">Aug 2024 - May 2026</em>
                   </p>
                </div>
             </div> <!-- item end -->
 
             <div class="row item">
                <div class="twelve columns">
-                  <h3>Bachelor of Engineering, Siddaganga Institute of Technology</h3>
-                  <p class="info">Biotechnology Engineering <span>&bull;</span> 
-                     <em class="date">2019 - 2023</em>
+                  <h3>Bachelor of Engineering, Visvesvaraya Technological University</h3>
+                  <p class="info">Biotechnology, First Class with Distinction <span>&bull;</span>
+                     <em class="date">Jun 2019 - Jul 2023</em>
                   </p>
                </div>
             </div> <!-- item end -->
@@ -482,12 +783,14 @@
                      <em class="date">09/2024 - Present</em>
                   </p>
                   <p align="justify">
-                     I'm currently working on a project involving profiling humoral immunity against 
-                     Influenza A using InFlux, a highly multiplexed neutralization assay. My role is 
-                     to handle the computational aspects of the project, designing and implementing 
-                     a pipeline for analyzing the generated data. I also lead a <a href="https://doi.org/10.3389/fbinf.2024.1424202" target="_blank"> PhIP-Seq </a>
-                     antibody-profiling project investigating influence of microbial dysbiosis on humoral immunityin early-onset, 
-                     late-onset colorectal cancer, and polyp/healthy control cohorts.
+                     I lead the computational analysis for an R01-funded <a href="https://doi.org/10.3389/fbinf.2024.1424202" target="_blank">PhIP-Seq</a>
+                     antibody-profiling project in Dr. Benjamin H. Larman's lab, across early-onset colorectal cancer,
+                     late-onset colorectal cancer, polyp, and healthy control cohorts, owning the analysis strategy, QC,
+                     statistics, and interpretation. I am developing an interpretable machine learning framework based on
+                     stability selection to recover reproducible cancer-associated antibody-reactivity signatures from
+                     sparse, high-dimensional PhIP-Seq data. I also design and maintain the computational workflows for
+                     InFlux, a U01-funded highly multiplexed NGS-based influenza A neutralization assay, including
+                     cohort-level QC, validation logic, and reproducible reporting.
                   </p>
                </div>
             </div> <!-- item end -->
@@ -500,14 +803,14 @@
                      <em class="date">06/2025 - 08/2025</em>
                   </p>
                   <p align="justify">
-                     Based in Baltimore, USA, I contributed to EpitopeFindeR 2, a reproducible pipeline to align 
-                     and cluster library peptide sequences to identify continuous and discontinuous epitopes, 
-                     integrating FoldDisco-based structural mapping to localize antibody binding sites on 3D antigen 
-                     structures. I developed <a href="https://latch.bio/product/plots" target="_blank">Latch Bio</a>-based 
-                     analysis pipelines to improve customer experience, including a UMAP-based sequence-space analyzer and 
-                     visualization module for EpitopeFindeR 2. I also benchmarked and optimized NGS-based <a href="https://www.infinitybio.com/mipsa/" target="_blank">MIPSA</a> 
-                     analysis pipelines by comparing alignment strategies, improving alignment quality and I/O handling while reducing overall 
-                     runtime and resource usage.
+                     Based in Baltimore, USA, I benchmarked and optimized NGS-based <a href="https://www.infinitybio.com/mipsa/" target="_blank">MIPSA</a>
+                     analysis pipelines on AWS EC2 by evaluating aligners and improving I/O handling, reducing runtime from
+                     approximately 24 hours to 6 hours and lowering compute cost by approximately 75%. I contributed to
+                     EpitopeFindeR 2, a reproducible peptide-sequence pipeline that uses FoldDisco-based structural mapping
+                     to identify continuous and discontinuous epitopes and localize antibody binding sites on antigen
+                     structures. I also built <a href="https://latch.bio/product/plots" target="_blank">Latch Bio</a> workflows
+                     and a sequence-space visualization module so that client-facing epitope mapping analyses could be run
+                     and inspected without engineering support.
                   </p>
                </div>
             </div> <!-- item end -->
@@ -528,10 +831,9 @@
                      <a href="https://doi.org/10.1016/j.isci.2024.111444" target="_blank">
                      “Bat RNA Viruses Employ Viral RHIMs to Orchestrate Species-Specific Cell Death Programs Linked to Z-RNA Sensing and ZBP1-RIPK3 Signaling”
                      </a>, explored how bat RNA viruses utilize viral RHIMs to regulate species-specific 
-                     cell death pathways via Z-RNA sensing and ZBP1-RIPK3 signaling. Additionally, I 
-                     contributed to a molecular dynamics study that elucidated how glycosylation patterns 
-                     and stalk length affect the structural dynamics and functional properties of 
-                     influenza neuraminidase.
+                     cell death pathways via Z-RNA sensing and ZBP1-RIPK3 signaling. I also helped show that
+                     neuraminidase stalk length and haemagglutinin glycosylation patterns can bias segment pairing
+                     and promote reassortment routes linked to the emergence of highly pathogenic clade 2.3.4.4b A(H5N1).
                   </p>
                </div>
             </div> <!-- item end -->
@@ -540,29 +842,45 @@
             <div class="row item">
                <div class="twelve columns">
                   <h3>DRP LAB, SIT, TUMKUR, INDIA</h3>
-                  <p class="info">Project intern <span>&bull;</span> 
+                  <p class="info">Project intern <span>&bull;</span>
                      <em class="date">11/2021 - 08/2023</em>
                   </p>
                   <p align="justify">
-                     Structural insights of SAICAR synthase in the presence of Mg<sup>2+</sup> ions 
-                     through Molecular Dynamics Simulations. Structural insights on the deformations 
-                     induced by various mutations on cholesteryl ester transfer protein.
+                     Performed molecular dynamics simulations of SAICAR synthase comparing Mg<sup>2+</sup>-bound and
+                     apo states, revealing ion-dependent conformational changes; the project received Best Undergraduate
+                     Thesis recognition. I also assisted molecular dynamics and free-energy analyses of CETP mutants,
+                     showing structural distortions associated with reduced neutral lipid transfer efficiency.
                   </p>
                </div>
             </div> <!-- item end -->
 
-            <!-- 4: SCIOMICS Pvt. Lmt., OOTY, INDIA -->
+            <!-- NITTE University -->
             <div class="row item">
                <div class="twelve columns">
-                  <h3>SCIOMICS Pvt. Lmt., OOTY, INDIA</h3>
-                  <p class="info">Project intern <span>&bull;</span> 
-                     <em class="date">05/2020 - 09/2023</em>
+                  <h3>NITTE UNIVERSITY, MANGALORE, INDIA</h3>
+                  <p class="info">Summer research intern <span>&bull;</span>
+                     <em class="date">08/2022 - 11/2022</em>
                   </p>
                   <p align="justify">
-                     Worked as a research associate on molecular dynamics simulations, virtual screening, 
-                     and genome informatics. Wrote Python programs, bash scripts, and GUI tools for simpler 
-                     research workflows. My work includes Modeller GUI, GROMACS bash scripts, XVG-to-RMS 
-                     graph plotters, and average SDF calculators.
+                     Performed virtual screening of natural product libraries against LuxS, followed by docking, ADMET,
+                     and MD/MM-PBSA validation to nominate hits that could disrupt AI-2 signaling in
+                     <em>Helicobacter pylori</em>.
+                  </p>
+               </div>
+            </div> <!-- item end -->
+
+            <!-- Insilicomics Pvt. Ltd., OOTY, INDIA -->
+            <div class="row item">
+               <div class="twelve columns">
+                  <h3>INSILICOMICS Pvt. Ltd., OOTY, INDIA</h3>
+                  <p class="info">Research Associate <span>&bull;</span>
+                     <em class="date">05/2020 - 08/2023</em>
+                  </p>
+                  <p align="justify">
+                     Worked on molecular dynamics simulations, virtual screening, genome informatics, and statistical
+                     data analysis while building Python scripts, Bash workflows, and GUI tools for research use.
+                     I also supported practical bioinformatics training programs and mentored students through
+                     hands-on computational biology workflows.
                   </p>
                </div>
             </div> <!-- item end -->
@@ -584,6 +902,151 @@
       </div> <!-- .row.work -->
    </section>
    <!-- Work Section End -->
+
+
+   <!-- Pipelines & Research Software Section
+   ================================================== -->
+   <section id="software">
+      <div class="row software">
+         <div class="three columns header-col">
+            <h1><span>Software</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+            <p class="section-intro">
+               Pipelines and research tools I have built or maintain. Production pipelines developed inside the
+               Larman Lab are described here but are not publicly released.
+            </p>
+
+            <div class="proj-grid">
+
+               <div class="proj-card">
+                  <h3>drydock</h3>
+                  <p class="proj-desc">
+                     Reproducible high-throughput virtual screening on Linux, with a CLI and a GUI. Prepares receptors
+                     and ligand libraries and docks them across four engines. Screens run detached and resume after
+                     interruption; pinned dependencies and per-run manifests make results reproducible on another machine.
+                  </p>
+                  <p class="proj-links">
+                     <a href="https://github.com/avinashkarkada/drydock" target="_blank" rel="noopener">Repository</a>
+                     <span class="proj-meta">Python</span>
+                  </p>
+               </div>
+
+               <div class="proj-card">
+                  <h3>PhIP-Seq analysis pipeline <span class="proj-badge">Larman Lab &middot; not public</span></h3>
+                  <p class="proj-desc">
+                     Production PhIP-Seq pipeline, which I run and maintain. Takes demultiplexed sequencing reads
+                     through alignment, QC, enrichment testing, hit calling, and reactivity scoring.
+                  </p>
+                  <p class="proj-links">
+                     <span class="proj-meta">R &middot; Bash &middot; SLURM</span>
+                  </p>
+               </div>
+
+               <div class="proj-card">
+                  <h3>PhIPmake2</h3>
+                  <p class="proj-desc">
+                     A memory-bounded R rewrite of the PhIP-Seq pipeline's summarisation step. Collapses peptide-level
+                     counts to proteins and joins annotations; a drop-in replacement for the original.
+                  </p>
+                  <p class="proj-links">
+                     <a href="https://github.com/avinashkarkada/PhIPmake2" target="_blank" rel="noopener">Repository</a>
+                     <span class="proj-meta">R</span>
+                  </p>
+               </div>
+
+               <div class="proj-card">
+                  <h3>InFlux pipeline</h3>
+                  <p class="proj-desc">
+                     Snakemake and SLURM workflow for the InFlux influenza neutralization assay, covering read
+                     processing, QC, quantification, titration modeling, and neutralization curves.
+                  </p>
+                  <p class="proj-links">
+                     <a href="https://github.com/avinashkarkada/Influx_pipeline" target="_blank" rel="noopener">Repository</a>
+                     <span class="proj-meta">Python &middot; Snakemake</span>
+                  </p>
+               </div>
+
+               <div class="proj-card">
+                  <h3>ARscape (groupwise)</h3>
+                  <p class="proj-desc">
+                     Extension of the PhIP-Seq pipeline's reactivity scoring, which scores whole organisms or peptide
+                     groups rather than single peptides, with support for groupwise comparisons.
+                  </p>
+                  <p class="proj-links">
+                     <a href="https://github.com/avinashkarkada/ARscape-Groupwise" target="_blank" rel="noopener">Repository</a>
+                     <span class="proj-meta">R</span>
+                  </p>
+               </div>
+
+               <div class="proj-card">
+                  <h3>Influenza Antigenic Cartography</h3>
+                  <p class="proj-desc">
+                     Python and Bash pipeline that builds 2D antigenic maps for H1N1 and H3N2 from neutralization
+                     data using multidimensional scaling.
+                  </p>
+                  <p class="proj-links">
+                     <a href="https://github.com/avinashkarkada/Influenza_Antigenic_Cartography" target="_blank" rel="noopener">Repository</a>
+                     <span class="proj-meta">Python</span>
+                  </p>
+               </div>
+
+               <div class="proj-card">
+                  <h3>Immune-cell trial dashboard</h3>
+                  <p class="proj-desc">
+                     Models longitudinal immune-cell frequencies from a clinical-trial dataset in a SQLite schema
+                     and serves responder comparisons through an interactive dashboard.
+                  </p>
+                  <p class="proj-links">
+                     <a href="https://github.com/avinashkarkada/trial-data-dashboard" target="_blank" rel="noopener">Repository</a>
+                     <span class="proj-meta">Python &middot; SQLite</span>
+                  </p>
+               </div>
+
+               <div class="proj-card">
+                  <h3>PhIP-Seq-Pipeline-Installer</h3>
+                  <p class="proj-desc">
+                     Shell scripts that reproduce the PhIP-Seq pipeline's dependency stack on a clean machine.
+                  </p>
+                  <p class="proj-links">
+                     <a href="https://github.com/avinashkarkada/PhIP-Seq-Pipeline-Installer" target="_blank" rel="noopener">Repository</a>
+                     <span class="proj-meta">Shell</span>
+                  </p>
+               </div>
+
+               <div class="proj-card">
+                  <h3>GROMACS-COLAB</h3>
+                  <p class="proj-desc">
+                     Jupyter notebooks for running GROMACS molecular dynamics simulations in Colab.
+                  </p>
+                  <p class="proj-links">
+                     <a href="https://github.com/avinashkarkada/GROMACS-COLAB" target="_blank" rel="noopener">Repository</a>
+                     <span class="proj-meta">Jupyter Notebook</span>
+                  </p>
+               </div>
+
+            </div>
+
+            <div class="proj-misc">
+               <h3>Smaller tools</h3>
+               <ul class="misc-list">
+                  <li><a href="https://github.com/avinashkarkada/MSA-Gap-Analyzer" target="_blank" rel="noopener">MSA-Gap-Analyzer</a>
+                     &mdash; generates and optimizes multiple sequence alignments by gap profile.</li>
+                  <li><a href="https://github.com/avinashkarkada/Modeller-scripts" target="_blank" rel="noopener">MODELLER-GUI</a>
+                     &mdash; Tkinter front end that simplifies MODELLER homology-modeling workflows.</li>
+                  <li><a href="https://github.com/avinashkarkada/pdbqt_maker" target="_blank" rel="noopener">pdbqt_maker</a>
+                     &mdash; converts SDF, PDB, and MOL2 files to PDBQT for docking.</li>
+                  <li><a href="https://github.com/avinashkarkada/RMSD-RMSF-graph-plotter" target="_blank" rel="noopener">RMSD/RMSF graph plotter</a>
+                     &mdash; GUI for plotting RMSD and RMSF directly from GROMACS <code>.xvg</code> output.</li>
+                  <li><a href="https://github.com/avinashkarkada/PCA-FEL" target="_blank" rel="noopener">PCA-FEL</a>
+                     &mdash; principal component analysis and free-energy landscape plots from MD trajectories.</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- Software Section End -->
 
 
    <!-- Skills Section
@@ -613,16 +1076,9 @@
                      <span class="tag">AWS</span>
                      <span class="tag">EC2</span>
                      <span class="tag">S3</span>
-                     <span class="tag">Docker</span>
-                     <span class="tag">Singularity</span>
                      <span class="tag">Conda</span>
                      <span class="tag">Mamba</span>
                      <span class="tag">Jupyter</span>
-                     <span class="tag">R Markdown</span>
-                     <span class="tag">Quarto</span>
-                     <span class="tag">Shiny</span>
-                     <span class="tag">VS Code</span>
-                     <span class="tag">RStudio</span>
                   </div>
                </div>
 
@@ -680,9 +1136,6 @@
                      <span class="tag">SciPy</span>
                      <span class="tag">scikit-learn</span>
                      <span class="tag">XGBoost</span>
-                     <span class="tag">matplotlib</span>
-                     <span class="tag">plotly</span>
-                     <span class="tag">ggplot2</span>
                      <span class="tag">dplyr</span>
                      <span class="tag">tidyr</span>
                      <span class="tag">randomForest</span>
@@ -696,7 +1149,6 @@
                      <span class="tag">Enrichment analysis</span>
                      <span class="tag">Pathway analysis</span>
                      <span class="tag">Network analysis</span>
-                     <span class="tag">Statistical data analysis</span>
                      <span class="tag">Sequence-space analysis</span>
                   </div>
                </div>
@@ -757,8 +1209,6 @@
                      <span class="tag">ggplot2</span>
                      <span class="tag">plotly</span>
                      <span class="tag">GraphPad Prism</span>
-                     <span class="tag">Excel</span>
-                     <span class="tag">PowerPoint</span>
                      <span class="tag">BioRender</span>
                      <span class="tag">LaTeX</span>
                      <span class="tag">R Markdown</span>
@@ -1032,6 +1482,56 @@
       </div><!-- .row.publications -->
    </section>
    <!-- Publications section end -->
+
+   <!-- Awards & Service Section
+   ================================================== -->
+   <section id="awards">
+      <div class="row awards">
+         <div class="three columns header-col">
+            <h1><span>Awards &amp; Service</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+            <ul class="award-list">
+               <li><strong>Peer reviewer</strong> for <em>Nature Communications</em>, <em>Journal of Crohn's and Colitis</em>,
+                  <em>Journal of Biomolecular Structure and Dynamics</em>, and
+                  <em>International Journal of Biological Macromolecules</em>.</li>
+               <li><strong>Paper presentation</strong>, Immunology 2025 (AAI Annual Meeting).</li>
+               <li><strong>Best Paper Presentation</strong>, JAIVIK 2022.</li>
+               <li><strong>Best Undergraduate Thesis</strong> for work on SAICAR synthase molecular dynamics.</li>
+               <li><strong>Mentoring</strong> students in practical bioinformatics, molecular dynamics, and NGS analysis.</li>
+            </ul>
+         </div>
+      </div>
+   </section>
+   <!-- Awards & Service Section End -->
+
+   <!-- Contact Section
+   ================================================== -->
+   <section id="contact">
+      <div class="row section-head">
+         <div class="three columns header-col">
+            <h1><span>Get in touch</span></h1>
+         </div>
+
+         <div class="nine columns">
+            <p class="lead">
+               Happy to hear about new projects, roles, or collaborations. Email is the best way to reach me.
+            </p>
+            <p style="margin-top:18px;">
+               <a class="contact-email" href="mailto:avikarkada@gmail.com">avikarkada@gmail.com</a>
+            </p>
+            <ul class="contact-links">
+               <li><a href="https://scholar.google.com/citations?user=KitPr8YAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+               <li><a href="https://github.com/avinashkarkada" target="_blank" rel="noopener">GitHub</a></li>
+               <li><a href="https://www.linkedin.com/in/avinash-karkada/" target="_blank" rel="noopener">LinkedIn</a></li>
+               <li><a href="https://orcid.org/0000-0001-6604-3351" target="_blank" rel="noopener">ORCID</a></li>
+               <li><a href="files/Avinash_Karkada_Ashok_CV.pdf" download>Download CV</a></li>
+            </ul>
+         </div>
+      </div>
+   </section>
+   <!-- Contact Section End -->
 
    <!-- Footer
    ================================================== -->
