@@ -1,1563 +1,901 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
 <head>
-   <!-- Basic Page Needs
-   ================================================== -->
-   <meta charset="utf-8">
-   <title>Avinash Karkada Ashok — Bioinformatics Engineer</title>
-   <meta name="description" content="Bioinformatics Engineer at Johns Hopkins School of Medicine. Computational biology, NGS analysis, and reproducible pipelines.">
-   <meta name="author" content="Avinash Karkada Ashok">
-
-   <!-- Open Graph / social link previews -->
-   <meta property="og:type" content="profile">
-   <meta property="og:title" content="Avinash Karkada Ashok — Bioinformatics Engineer">
-   <meta property="og:description" content="Bioinformatics Engineer at Johns Hopkins School of Medicine. Computational biology, NGS analysis, and reproducible pipelines.">
-   <meta property="og:url" content="https://avinashkarkada.github.io/">
-   <meta property="og:image" content="https://avinashkarkada.github.io/images/profilepic.jpg">
-   <meta name="twitter:card" content="summary">
-   <meta name="twitter:title" content="Avinash Karkada Ashok — Bioinformatics Engineer">
-   <meta name="twitter:description" content="Bioinformatics Engineer at Johns Hopkins School of Medicine. Computational biology, NGS analysis, and reproducible pipelines.">
-   <meta name="twitter:image" content="https://avinashkarkada.github.io/images/profilepic.jpg">
-   <link rel="canonical" href="https://avinashkarkada.github.io/">
-
-   <!-- Mobile Specific Metas
-   ================================================== -->
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-   <!-- CSS
-   ================================================== -->
-   <link rel="stylesheet" href="css/default.css">
-   <link rel="stylesheet" href="css/layout.css">
-   <link rel="stylesheet" href="css/media-queries.css">
-   <link rel="stylesheet" href="css/magnific-popup.css">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-
-   <!-- Script
-   ================================================== -->
-   <script src="js/modernizr.js"></script>
-
-   <!-- Favicons
-   ================================================== -->
-   <!-- Changed to SVG Favicon -->
-   <link rel="icon" type="image/svg+xml" href="dna_clipart.svg">
-
-
-   <style>
-      #skills {
-         background: #fff;
-         padding-top: 0;
-         padding-bottom: 72px;
-         overflow: hidden;
-         border-top: 1px solid #e8e8e8;
-      }
-
-      #certificates {
-         background: #f5f5f5;
-         padding-top: 0;
-         padding-bottom: 72px;
-         overflow: hidden;
-         border-top: 1px solid #e8e8e8;
-      }
-
-      #publications {
-         background: #fff;
-         padding-top: 0;
-         padding-bottom: 72px;
-         overflow: hidden;
-         border-top: 1px solid #e8e8e8;
-      }
-
-      #software {
-         background: #f5f5f5;
-         padding-top: 0;
-         padding-bottom: 72px;
-         overflow: hidden;
-         border-top: 1px solid #e8e8e8;
-      }
-
-      #awards {
-         background: #f5f5f5;
-         padding-top: 0;
-         padding-bottom: 72px;
-         overflow: hidden;
-         border-top: 1px solid #e8e8e8;
-      }
-
-      #software h1,
-      #awards h1 {
-         font: 18px/24px 'opensans-bold', sans-serif;
-         text-transform: uppercase;
-         letter-spacing: 1px;
-      }
-
-      #software h1 span,
-      #awards h1 span {
-         display: inline-block;
-         border-bottom: 3px solid #11ABB0;
-         padding-bottom: 6px;
-      }
-
-      #software .header-col,
-      #awards .header-col {
-         padding-top: 9px;
-      }
-
-      #software .main-col,
-      #awards .main-col {
-         padding-top: 0;
-         padding-right: 4%;
-      }
-
-      #software .row.software,
-      #awards .row.awards {
-         padding-top: 48px;
-         margin-top: 0;
-         margin-bottom: 0;
-      }
-
-      .proj-grid {
-         display: grid;
-         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-         gap: 20px;
-      }
-
-      .proj-card {
-         background: #fff;
-         border: 1px solid #e3e8ee;
-         border-radius: 16px;
-         padding: 22px 24px 18px;
-         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
-         display: flex;
-         flex-direction: column;
-      }
-
-      .proj-card h3 {
-         color: #313131;
-         font-size: 19px;
-         line-height: 1.35;
-         margin: 0 0 12px;
-      }
-
-      .proj-badge {
-         display: inline-block;
-         margin-left: 8px;
-         padding: 3px 9px;
-         border-radius: 999px;
-         background: #f0f2f4;
-         border: 1px solid #e2e7eb;
-         color: #6e7881;
-         font: 11px/1.6 'opensans-semibold', sans-serif;
-         text-transform: none;
-         letter-spacing: 0;
-         vertical-align: middle;
-         white-space: nowrap;
-      }
-
-      .proj-desc {
-         color: #6e7881;
-         font-size: 15px;
-         line-height: 1.75;
-         margin: 0 0 16px;
-         flex: 1 1 auto;
-         text-align: justify;
-      }
-
-      .proj-card code,
-      .misc-list code {
-         background: #f0f3f6;
-         border-radius: 4px;
-         padding: 1px 5px;
-         font-size: 13px;
-         color: #4f5d6b;
-      }
-
-      .proj-links {
-         margin: 0;
-         display: flex;
-         align-items: center;
-         flex-wrap: wrap;
-         gap: 12px;
-      }
-
-      .proj-links a {
-         color: #11ABB0;
-         font: 14px/1.6 'opensans-semibold', sans-serif;
-         border-bottom: 1px solid rgba(17, 171, 176, 0.35);
-      }
-
-      .proj-links a:hover {
-         color: #0D8386;
-         border-bottom-color: #0D8386;
-      }
-
-      .proj-meta {
-         color: #97a1ab;
-         font-size: 13px;
-      }
-
-      .proj-misc {
-         margin-top: 32px;
-      }
-
-      .proj-misc h3 {
-         color: #313131;
-         font-size: 18px;
-         margin: 0 0 14px;
-      }
-
-      .misc-list {
-         list-style: none;
-         margin: 0;
-         padding: 0;
-      }
-
-      .misc-list li {
-         color: #6e7881;
-         font-size: 15px;
-         line-height: 1.8;
-         padding: 6px 0;
-         border-bottom: 1px solid #e8ecef;
-      }
-
-      .misc-list li:last-child {
-         border-bottom: none;
-      }
-
-      .misc-list a {
-         color: #11ABB0;
-         font-family: 'opensans-semibold', sans-serif;
-      }
-
-      .misc-list a:hover {
-         color: #0D8386;
-      }
-
-      .award-list {
-         list-style: none;
-         margin: 0 0 28px;
-         padding: 0;
-      }
-
-      .award-list li {
-         position: relative;
-         color: #6e7881;
-         font-size: 15px;
-         line-height: 1.8;
-         padding: 0 0 14px 22px;
-      }
-
-      .award-list li:before {
-         content: "";
-         position: absolute;
-         left: 0;
-         top: 11px;
-         width: 7px;
-         height: 7px;
-         border-radius: 50%;
-         background: #11ABB0;
-      }
-
-      .award-list strong {
-         color: #313131;
-         font-family: 'opensans-semibold', sans-serif;
-         font-weight: normal;
-      }
-
-      #contact {
-         background: #191919;
-         padding-top: 66px;
-         padding-bottom: 60px;
-      }
-
-      #contact .section-head {
-         margin-bottom: 42px;
-      }
-
-      #contact h1 {
-         font: 18px/24px 'opensans-bold', sans-serif;
-         text-transform: uppercase;
-         letter-spacing: 1px;
-         color: #fff;
-         margin-bottom: 6px;
-      }
-
-      /* the CeeVee template hides this span and floats a 72px FontAwesome
-         envelope in via :before -- undo both */
-      #contact h1 span {
-         display: inline-block;
-         border-bottom: 3px solid #11ABB0;
-         padding-bottom: 6px;
-      }
-
-      #contact h1:before {
-         content: none;
-         padding-right: 0;
-         float: none;
-         font-size: inherit;
-         line-height: inherit;
-      }
-
-      #contact p.lead {
-         color: #a3a3a3;
-         font: 16px/1.8 'opensans-light', sans-serif;
-         margin: 22px 0 0;
-         max-width: 620px;
-      }
-
-      #contact a.contact-email {
-         color: #11ABB0;
-         font: 20px/1.6 'opensans-semibold', sans-serif;
-         border-bottom: 1px solid rgba(17, 171, 176, 0.4);
-      }
-
-      #contact a.contact-email:hover {
-         color: #fff;
-         border-bottom-color: #fff;
-      }
-
-      .contact-links {
-         margin: 24px 0 0;
-         padding: 0;
-         list-style: none;
-         display: flex;
-         flex-wrap: wrap;
-         gap: 22px;
-      }
-
-      .contact-links a {
-         color: #a3a3a3;
-         font-size: 15px;
-      }
-
-      .contact-links a:hover {
-         color: #11ABB0;
-      }
-
-
-      #resume {
-         padding-bottom: 34px;
-      }
-
-      #resume .row.education {
-         padding-bottom: 0;
-         margin-bottom: 0;
-      }
-
-      #resume .main-col .row.item:last-child {
-         margin-bottom: 0;
-      }
-
-      #work h1 {
-         font: 18px/24px 'opensans-bold', sans-serif;
-         text-transform: uppercase;
-         letter-spacing: 1px;
-      }
-
-      #work h1 span {
-         border-bottom: 3px solid #11ABB0;
-         padding-bottom: 6px;
-      }
-
-      #work .header-col {
-         padding-top: 9px;
-      }
-
-      #work .main-col {
-         padding-right: 10%;
-      }
-
-      #skills h1,
-      #certificates h1,
-      #publications h1 {
-         font: 18px/24px 'opensans-bold', sans-serif;
-         text-transform: uppercase;
-         letter-spacing: 1px;
-      }
-
-      #skills h1 span,
-      #certificates h1 span,
-      #publications h1 span {
-         border-bottom: 3px solid #11ABB0;
-         padding-bottom: 6px;
-      }
-
-
-      #skills .header-col {
-         width: 13%;
-      }
-
-      #skills .main-col {
-         width: 87%;
-         padding-right: 2%;
-      }
-
-      #skills .section-grid {
-         display: block;
-         column-count: 2;
-         column-gap: 22px;
-      }
-
-      #skills .info-card {
-         display: inline-block;
-         width: 100%;
-         margin: 0 0 22px;
-         vertical-align: top;
-         break-inside: avoid;
-         -webkit-column-break-inside: avoid;
-         page-break-inside: avoid;
-      }
-
-      #skills .tag-list {
-         gap: 8px;
-      }
-
-      #skills .tag {
-         padding: 7px 10px;
-         font-size: 13px;
-      }
-
-      #certificates .header-col {
-         width: 20%;
-      }
-
-      #certificates .main-col {
-         width: 80%;
-      }
-
-      #certificates .cert-grid {
-         grid-template-columns: repeat(2, minmax(320px, 1fr));
-         gap: 18px;
-      }
-
-      #certificates .course-tags {
-         gap: 8px;
-      }
-
-      #certificates .course-tag {
-         padding: 7px 11px;
-         font-size: 13px;
-      }
-
-      #skills .row,
-      #certificates .row,
-      #publications .row {
-         margin-top: 0;
-         margin-bottom: 0;
-      }
-
-      #skills .row.skill,
-      #certificates .row.work {
-         padding-top: 48px;
-      }
-
-      #publications .row.publications {
-         padding-top: 40px;
-      }
-
-      #skills .header-col,
-      #certificates .header-col,
-      #publications .header-col {
-         padding-top: 9px;
-      }
-
-      #skills .main-col,
-      #certificates .main-col,
-      #publications .main-col {
-         padding-top: 0;
-         padding-right: 10%;
-      }
-
-      #skills .main-col {
-         padding-right: 2%;
-      }
-
-      #skills .header-col h1,
-      #certificates .header-col h1,
-      #publications .header-col h1,
-      #skills .main-col > :first-child,
-      #certificates .main-col > :first-child,
-      #publications .main-col > :first-child {
-         margin-top: 0;
-      }
-
-      .section-intro {
-         color: #6e7881;
-         margin: 0 0 28px 0;
-         line-height: 1.8;
-      }
-
-      .section-grid {
-         display: grid;
-         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-         gap: 22px;
-      }
-
-      .info-card {
-         background: #fafafa;
-         border: 1px solid #e3e8ee;
-         border-radius: 16px;
-         padding: 22px 22px 18px;
-         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
-         height: auto;
-         align-self: start;
-      }
-
-      .info-card h3,
-      .cert-block h3,
-      .course-block h3 {
-         color: #313131;
-         font-size: 20px;
-         line-height: 1.3;
-         margin-top: 0;
-         margin-bottom: 16px;
-      }
-
-      .tag-list {
-         display: flex;
-         flex-wrap: wrap;
-         gap: 10px;
-      }
-
-      .tag {
-         display: inline-block;
-         padding: 8px 12px;
-         border-radius: 999px;
-         background: #eef5ff;
-         color: #284b63;
-         font-size: 14px;
-         line-height: 1.4;
-         border: 1px solid #d7e7fb;
-      }
-
-      .cert-grid {
-         display: grid;
-         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-         gap: 16px;
-         margin-bottom: 28px;
-      }
-
-      .cert-item {
-         background: #fafafa;
-         border: 1px solid #e3e8ee;
-         border-radius: 14px;
-         padding: 16px 18px;
-         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
-      }
-
-      .cert-title {
-         display: block;
-         color: #313131;
-         font-weight: 600;
-         margin-bottom: 6px;
-         line-height: 1.5;
-      }
-
-      .cert-org {
-         display: block;
-         color: #6e7881;
-         font-size: 14px;
-         line-height: 1.5;
-      }
-
-      .course-block {
-         margin-top: 6px;
-      }
-
-      .course-tags {
-         display: flex;
-         flex-wrap: wrap;
-         gap: 10px;
-      }
-
-      .course-tag {
-         display: inline-block;
-         padding: 8px 12px;
-         border-radius: 12px;
-         background: #f4f6f8;
-         color: #4f5d6b;
-         font-size: 14px;
-         line-height: 1.4;
-         border: 1px solid #e2e7eb;
-      }
-
-      @media only screen and (max-width: 1100px) {
-         #skills .section-grid {
-            column-count: 1;
-         }
-
-         #certificates .cert-grid {
-            grid-template-columns: 1fr;
-         }
-      }
-
-      @media only screen and (max-width: 900px) {
-         #skills .header-col,
-         #skills .main-col,
-         #certificates .header-col,
-         #certificates .main-col {
-            width: 100%;
-         }
-
-         .proj-grid {
-            grid-template-columns: 1fr;
-         }
-      }
-
-      @media only screen and (max-width: 767px) {
-         #skills, #certificates, #publications, #software, #awards {
-            padding-top: 0;
-            padding-bottom: 54px;
-         }
-
-         #skills .row.skill,
-         #certificates .row.work,
-         #publications .row.publications,
-         #software .row.software,
-         #awards .row.awards {
-            padding-top: 36px;
-         }
-
-         .info-card,
-         .cert-item,
-         .proj-card {
-            padding: 18px;
-         }
-
-         #software .main-col,
-         #awards .main-col {
-            padding-right: 0;
-         }
-
-         .proj-desc {
-            text-align: left;
-         }
-
-         #contact {
-            padding-top: 48px;
-            padding-bottom: 48px;
-         }
-      }
-</style>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Avinash Karkada Ashok — Bioinformatics Engineer</title>
+  <meta name="description" content="Bioinformatics Engineer at Johns Hopkins School of Medicine. Computational biology, NGS analysis, and reproducible pipelines.">
+  <meta name="author" content="Avinash Karkada Ashok">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Avinash Karkada Ashok — Bioinformatics Engineer">
+  <meta property="og:description" content="Bioinformatics Engineer at Johns Hopkins School of Medicine. Computational biology, NGS analysis, and reproducible pipelines.">
+  <meta property="og:url" content="https://avinashkarkada.github.io/">
+  <meta property="og:image" content="https://avinashkarkada.github.io/images/profilepic.jpg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Avinash Karkada Ashok — Bioinformatics Engineer">
+  <meta name="twitter:description" content="Bioinformatics Engineer at Johns Hopkins School of Medicine. Computational biology, NGS analysis, and reproducible pipelines.">
+  <meta name="twitter:image" content="https://avinashkarkada.github.io/images/profilepic.jpg">
+  <link rel="canonical" href="https://avinashkarkada.github.io/">
+
+  <meta name="theme-color" content="#f6f4ee" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e1011" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" type="image/png" href="favicon.png">
+
+  <script>
+    (function () {
+      var root = document.documentElement, theme;
+      try { theme = localStorage.getItem('theme'); } catch (e) {}
+      if (theme !== 'light' && theme !== 'dark') {
+        theme = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      root.dataset.theme = theme;
+      root.classList.add('js');
+    })();
+  </script>
+
+  <link rel="preload" href="fonts/IBMPlexSans-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/IBMPlexMono-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/site.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Avinash Karkada Ashok",
+    "url": "https://avinashkarkada.github.io/",
+    "image": "https://avinashkarkada.github.io/images/profilepic.jpg",
+    "jobTitle": "Bioinformatics Engineer",
+    "worksFor": { "@type": "Organization", "name": "Johns Hopkins School of Medicine" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Johns Hopkins University" },
+    "sameAs": [
+      "https://github.com/avinashkarkada",
+      "https://www.linkedin.com/in/avinash-karkada/",
+      "https://scholar.google.com/citations?user=KitPr8YAAAAJ&hl=en",
+      "https://orcid.org/0000-0001-6604-3351"
+    ]
+  }
+  </script>
 </head>
-
 <body>
+  <a class="skip" href="#main">Skip to content</a>
 
-   <!-- Header
-   ================================================== -->
-   <header id="home">
-      <nav id="nav-wrap">
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-out" viewBox="0 0 16 16"><path d="M5 3h8v8M13 3 3.5 12.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-down" viewBox="0 0 16 16"><path d="M8 2v8.5M4.5 7.5 8 11l3.5-3.5M3 13.5h10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 16 16"><path d="M2 4h12v8.5H2zM2.5 4.5 8 9l5.5-4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 16 16"><circle cx="8" cy="8" r="2.8" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5v1.6M8 12.9v1.6M1.5 8h1.6M12.9 8h1.6M3.4 3.4l1.1 1.1M11.5 11.5l1.1 1.1M3.4 12.6l1.1-1.1M11.5 4.5l1.1-1.1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 16 16"><path d="M13 9.6A5.5 5.5 0 0 1 6.4 3a5.5 5.5 0 1 0 6.6 6.6z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+    <symbol id="i-search" viewBox="0 0 16 16"><circle cx="7" cy="7" r="4.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="m10.2 10.2 3.3 3.3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+    <symbol id="i-play" viewBox="0 0 16 16"><path d="M5 3.2v9.6L12.5 8z" fill="currentColor"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 16 16"><path d="M4.5 3.2h2.4v9.6H4.5zM9.1 3.2h2.4v9.6H9.1z" fill="currentColor"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 16 16"><path d="M5.5 5.5h7v7h-7zM3.5 10.5v-7h7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 16 16"><path d="m4 6 4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
 
-         <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">About</a></li>
-            <li><a class="smoothscroll" href="#resume">Education</a></li>
-            <li><a class="smoothscroll" href="#work">Works</a></li>
-            <li><a class="smoothscroll" href="#software">Software</a></li>
-            <li><a class="smoothscroll" href="#skills">Skills</a></li>
-            <li><a class="smoothscroll" href="#certificates">Certificates &amp; Courses</a></li>
-            <li><a class="smoothscroll" href="#publications">Publications</a></li>
-            <li><a class="smoothscroll" href="#awards">Awards &amp; Service</a></li>
-            <li><a class="smoothscroll" href="#contact">Contact</a></li>
-         </ul>
- <!-- end #nav -->
-      </nav> <!-- end #nav-wrap -->
+  <header class="nav" id="nav">
+    <div class="wrap nav-in">
+      <a class="brand" href="#top" aria-label="Avinash Karkada Ashok, back to top">
+        <span class="res" data-aa="A">A</span><span class="res" data-aa="K">K</span><span class="res" data-aa="A">A</span>
+      </a>
+      <nav aria-label="Sections">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#software">Software</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-tools">
+        <button type="button" class="kbtn" id="palette-open" aria-label="Open quick navigation">
+          <svg class="ico"><use href="#i-search"/></svg><span class="kbtn-label">Jump to</span><kbd>/</kbd>
+        </button>
+        <button type="button" class="iconbtn" id="theme-toggle" aria-label="Switch colour theme">
+          <svg class="ico ico-sun"><use href="#i-sun"/></svg><svg class="ico ico-moon"><use href="#i-moon"/></svg>
+        </button>
+        <button type="button" class="iconbtn nav-menu" id="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+          <span class="burger" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+    <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+  </header>
 
-      <div class="row banner">
-         <div class="banner-text">
-            <h1 class="responsive-headline">Hello, </h1>
-            <h2 class="namadeya">I'm Avinash Karkada Ashok</h2>
-            <h3>Biotechnology | Bioinformatics | Computational Biology</h3>
-            <hr />
-            <ul class="social">
-               <li>
-                  <a href="https://scholar.google.com/citations?user=KitPr8YAAAAJ&hl=en">
-                     <img class="scholo" src="./images/scholar.png" alt="Scholar" />
-                  </a>
-                  <a href="https://github.com/avinashkarkada">
-                     <img class="gitto" src="./images/github.png" alt="GitHub" />
-                  </a>
-                  <a href="https://www.linkedin.com/in/avinash-karkada/">
-                     <img class="linkko" src="./images/linkedin.png" alt="LinkedIn" />
-                  </a>
-                  <a href="https://orcid.org/0000-0001-6604-3351">
-                     <img class="orco" src="./images/orcid.png" alt="ORCID" />
-                  </a>
-               </li>
+  <main id="main">
+
+    <!-- ============================== Hero ============================== -->
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Bioinformatics Engineer · Johns Hopkins School of Medicine</p>
+
+          <h1 class="seqname">
+            <span class="vh">Avinash Karkada Ashok</span>
+            <span class="seq" aria-hidden="true" id="seq">
+              <span class="seq-word" data-pos="1"><span class="res" data-aa="A">A</span><span class="res" data-aa="V">V</span><span class="res" data-aa="I">I</span><span class="res" data-aa="N">N</span><span class="res" data-aa="A">A</span><span class="res" data-aa="S">S</span><span class="res" data-aa="H">H</span></span>
+              <span class="seq-word" data-pos="8"><span class="res" data-aa="K">K</span><span class="res" data-aa="A">A</span><span class="res" data-aa="R">R</span><span class="res" data-aa="K">K</span><span class="res" data-aa="A">A</span><span class="res" data-aa="D">D</span><span class="res" data-aa="A">A</span></span>
+              <span class="seq-word" data-pos="15"><span class="res" data-aa="A">A</span><span class="res" data-aa="S">S</span><span class="res" data-aa="H">H</span><span class="res" data-aa="O">O</span><span class="res" data-aa="K">K</span></span>
+            </span>
+          </h1>
+
+          <p class="seq-readout" id="seq-readout" aria-hidden="true">19 residues</p>
+          <ul class="seq-legend" aria-hidden="true">
+            <li><span class="swatch" data-class="hydrophobic"></span>hydrophobic</li>
+            <li><span class="swatch" data-class="polar"></span>polar</li>
+            <li><span class="swatch" data-class="basic"></span>basic</li>
+            <li><span class="swatch" data-class="acidic"></span>acidic</li>
+            <li><span class="swatch" data-class="special"></span>pyrrolysine</li>
+          </ul>
+
+          <p class="lead">Computational biology, NGS analysis, and reproducible pipelines.</p>
+
+          <div class="actions">
+            <a class="btn btn--primary" href="#work">See the work</a>
+            <a class="btn" href="files/Avinash_Karkada_Ashok_CV.pdf" download><svg class="ico"><use href="#i-down"/></svg>Download CV</a>
+          </div>
+          <ul class="links">
+            <li><a href="https://github.com/avinashkarkada" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://scholar.google.com/citations?user=KitPr8YAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+            <li><a href="https://www.linkedin.com/in/avinash-karkada/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://orcid.org/0000-0001-6604-3351" target="_blank" rel="noopener">ORCID</a></li>
+          </ul>
+        </div>
+
+        <figure class="fig fig--bare" id="fig-ha">
+          <div class="fig-stage ha-stage">
+            <canvas id="ha-canvas" role="img" aria-label="Rotating three-dimensional backbone trace of a full-length influenza H3 hemagglutinin trimer, anchored in a membrane"></canvas>
+            <button type="button" class="fig-pause" data-act="toggle" aria-label="Pause rotation"><svg class="ico"><use href="#i-pause"/></svg></button>
+            <noscript><p class="fig-noscript">The interactive structure needs JavaScript.</p></noscript>
+          </div>
+          <div class="fig-foot">
+            <div class="seg" role="group" aria-label="Colour the structure by">
+              <button type="button" data-mode="units" aria-pressed="true">Subunits</button>
+              <button type="button" data-mode="sites" aria-pressed="false">Antigenic sites</button>
+            </div>
+            <p class="fig-readout" data-readout>Drag to rotate</p>
+          </div>
+          <ul class="legend" data-legend="units">
+            <li><span class="key key--line" data-series="1"></span>HA1</li>
+            <li><span class="key key--line" data-series="2"></span>HA2</li>
+          </ul>
+          <ul class="legend" data-legend="sites" hidden>
+            <li><span class="key key--dot" data-series="1"></span>A</li>
+            <li><span class="key key--dot" data-series="2"></span>B</li>
+            <li><span class="key key--dot" data-series="3"></span>C</li>
+            <li><span class="key key--dot" data-series="4"></span>D</li>
+            <li><span class="key key--dot" data-series="5"></span>E</li>
+          </ul>
+          <figcaption><span class="fig-num">Fig. 1</span> Full-length H3 hemagglutinin trimer, modelled by homology modelling, threading with AlphaFold and optimization with simulated annealing. Drawn as a C-alpha trace. <a href="https://github.com/avinashkarkada/Challenge_Project_Protein_Bioinformatics" target="_blank" rel="noopener">Model file</a>.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============================== About ============================== -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <header class="sec-head"><span class="sec-num">01</span><h2>About</h2></header>
+        <div class="about-grid">
+          <div class="prose">
+            <p>I am a computational biologist with an M.S. in Bioinformatics from Johns Hopkins University with a passion for working at the intersection of biology, data, and software engineering. I have experience in bioinformatics and omics analytics (NGS and immune profiling), biostatistics/visualization, as well as ML-driven discovery with a strong focus on reproducibility using git, Linux/HPC and cloud environments.</p>
+            <p>I also have a background in drug discovery and structural biology/molecular modeling/molecular dynamics simulations, providing a computational chemistry perspective where appropriate. I have contributed across academic and industry settings, collaborate well with cross-functional teams, and care deeply about rigorous, biologically grounded analysis, from experimental context to interpretation and communication of results.</p>
+          </div>
+          <aside class="card about-card" aria-label="At a glance">
+            <picture>
+              <source type="image/webp" srcset="images/portrait-320.webp 320w, images/portrait-640.webp 640w" sizes="(max-width: 720px) 96px, 120px">
+              <img class="portrait" src="images/profilepic.jpg" width="120" height="120" alt="Portrait of Avinash Karkada Ashok" loading="lazy">
+            </picture>
+            <dl class="facts">
+              <div><dt>Now</dt><dd>Bioinformatics Engineer, Larman Lab, Johns Hopkins School of Medicine</dd></div>
+              <div><dt>Based in</dt><dd>Baltimore, MD</dd></div>
+              <div><dt>Trained in</dt><dd>M.S. Bioinformatics, Johns Hopkins University</dd></div>
+              <div><dt>Reach me</dt><dd><a href="mailto:avikarkada@gmail.com">avikarkada@gmail.com</a></dd></div>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== Work ============================== -->
+    <section class="section" id="work">
+      <div class="wrap">
+        <header class="sec-head"><span class="sec-num">02</span><h2>Selected work</h2></header>
+
+        <!-- PhIP-Seq -->
+        <h3 class="arc">Immune profiling at scale</h3>
+
+        <article class="work work--split" id="work-platform">
+          <div class="work-text">
+            <p class="work-meta">Johns Hopkins School of Medicine · Larman Lab · <span class="nw">2024–present</span></p>
+            <h3>The PhIP-Seq platform</h3>
+            <p>Develop and maintain the production PhIP-Seq pipeline and codespace on the JHU Rockfish HPC system, including phipmake2, an R library for post-alignment summarisation across multi-library screens.</p>
+            <p>When a run finishes, the reads and the metadata that says which library they belong to go through alignment, library splitting, beads-only background modelling, hit calling, annotation, and taxon-level aggregation. Which partition each step runs on is a judgment call rather than a fixed recipe.</p>
+            <ul class="tags"><li>R</li><li>Bash</li><li>SLURM</li><li>HPC</li></ul>
+          </div>
+          <figure class="fig" id="fig-platform">
+            <div class="fig-head"><p class="fig-title">From sequencing run to shared results</p></div>
+            <div class="fig-stage"><svg class="plot" id="platform-plot" viewBox="0 0 640 178" role="group" aria-label="Flow diagram of the PhIP-Seq platform: raw reads and metadata into a six-stage pipeline, then out to shared results and cold storage"></svg></div>
+            <div class="stage-info" data-stage-info aria-live="polite"></div>
+            <figcaption><span class="fig-num">Fig. 2</span> The platform end to end. Select a stage to read what it does.</figcaption>
+          </figure>
+        </article>
+
+        <article class="work work--split" id="work-phipseq">
+          <div class="work-text">
+            <p class="work-meta">Johns Hopkins School of Medicine · Larman Lab · <span class="nw">2024–present</span></p>
+            <h3>PhIP-Seq antibody profiling across colorectal cancer cohorts</h3>
+            <p>I lead the computational analysis for an R01-funded <a href="https://doi.org/10.3389/fbinf.2024.1424202" target="_blank" rel="noopener">PhIP-Seq</a> antibody-profiling project in Dr. Benjamin H. Larman's lab, across early-onset colorectal cancer, late-onset colorectal cancer, polyp, and healthy control cohorts, owning the analysis strategy, QC, statistics, and interpretation.</p>
+            <p>Differential reactivity is analysed at peptide, protein, pathway, and genus and species levels.</p>
+            <p>Developed CALIPER, a groupwise differential method for PhIP-Seq, and benchmarked it against existing tools using Boston Birth Cohort MMR vaccine data as ground truth. Contributed to developing and evaluating genus- and species-level aggregate reactivity scoring methods.</p>
+            <ul class="tags"><li>PhIP-Seq</li><li>R</li><li>Bash</li><li>SLURM</li></ul>
+          </div>
+          <figure class="fig" id="fig-levels">
+            <div class="fig-head"><p class="fig-title">Differential reactivity at two levels</p></div>
+            <div class="fig-controls">
+              <div class="seg" role="group" aria-label="Level of analysis">
+                <button type="button" data-level="0" aria-pressed="true">Peptide level</button>
+                <button type="button" data-level="1" aria-pressed="false">Species level</button>
+              </div>
+              <button type="button" class="btn btn--sm" data-act="new">New cohort</button>
+            </div>
+            <div class="fig-stage"><svg class="plot" id="levels-plot" viewBox="0 0 640 360" role="img" aria-label="Volcano plot of simulated antibody reactivity. Each point is a peptide, or after switching level a species, placed by its difference between cases and controls and by its p-value"></svg></div>
+            <div class="fig-foot">
+              <ul class="legend">
+                <li><span class="key key--dot" data-series="1"></span>passes 5% FDR</li>
+                <li><span class="key key--dot" data-series="mute"></span>does not</li>
+                <li><span class="key key--ring"></span>planted signal</li>
+              </ul>
+              <p class="fig-readout" data-readout></p>
+            </div>
+            <figcaption><span class="fig-num">Fig. 3</span> Why a cohort is analysed at more than one level. In this simulated cohort, cases are more often exposed to three species, which lifts reactivity a little across each of their peptides. Tested peptide by peptide, most of that signal fails false-discovery control. Counted per species, it is clear.</figcaption>
+          </figure>
+        </article>
+
+        <!-- InFlux -->
+
+        <article class="work work--split work--flip" id="work-epitope">
+          <div class="work-text">
+            <p class="work-meta">Infinity Bio, Inc. · 2025</p>
+            <h3>EpitopeFindeR 2 and structural epitope mapping</h3>
+            <p>Contributed to EpitopeFindeR 2, a pipeline integrating iterative sequence alignment and FoldDisco-based structural mapping to identify continuous and discontinuous epitopes from MIPSA (Molecular Indexing of Proteins by Self-Assembly) protein libraries.</p>
+            <p>Built Latch-based analysis workflows and a sequence-space visualization dashboard for exploring peptide and epitope embeddings.</p>
+            <ul class="tags"><li>Python</li><li>FoldDisco</li><li>AlphaFold</li><li>Latch</li></ul>
+          </div>
+          <figure class="fig" id="fig-epitope">
+            <div class="fig-head"><p class="fig-title">Why epitopes have to be mapped on the structure</p></div>
+            <div class="fig-controls">
+              <div class="seg" role="group" aria-label="Epitope type">
+                <button type="button" data-epitope="A" aria-pressed="true">Continuous</button>
+                <button type="button" data-epitope="C" aria-pressed="false">Discontinuous</button>
+              </div>
+            </div>
+            <div class="fig-stage epitope-stage"><canvas id="epitope-canvas" role="img" aria-label="Three-dimensional trace of the HA1 head with the residues of the selected epitope highlighted"></canvas></div>
+            <svg id="epitope-ruler" role="img" aria-label="Position of the epitope segments along the HA1 sequence"></svg>
+            <div class="fig-foot"><p class="fig-readout" data-readout></p></div>
+            <figcaption><span class="fig-num">Fig. 4</span> The same H3 model as Fig. 1, one protomer highlighted. A continuous epitope is one run of sequence; a discontinuous one is built from segments that meet only once the chain folds, which is why mapping is done against the structure. Distances measured from the model.</figcaption>
+          </figure>
+        </article>
+
+        <h3 class="arc">Functional antibody profiling</h3>
+
+        <article class="work work--split" id="work-hascan">
+          <div class="work-text">
+            <p class="work-meta">Johns Hopkins School of Medicine · Larman Lab · <span class="nw">2024–present</span></p>
+            <h3>HAScan</h3>
+            <p>A PhIP-Seq library of overlapping peptide tiles covering hemagglutinin across essentially all known influenza A and B strains. It asks where on HA a person’s antibodies bind, and which strains they recognise.</p>
+            <p>Every HA is aligned to a shared coordinate system before tiling, so the same position is comparable from one strain to the next and reactivity can be read as strain-specific or conserved. It pairs with InFlux: one assay says where antibodies bind, the other whether they block infection.</p>
+            <ul class="tags"><li>PhIP-Seq</li><li>Influenza</li><li>Serology</li></ul>
+          </div>
+          <figure class="fig" id="fig-hascan">
+            <div class="fig-head"><p class="fig-title">Which strains a serum reacts to</p></div>
+            <div class="fig-controls">
+              <div class="seg" role="group" aria-label="Donor">
+                <button type="button" data-donor="A" aria-pressed="true">Donor A</button>
+                <button type="button" data-donor="B" aria-pressed="false">Donor B</button>
+              </div>
+            </div>
+            <div class="fig-stage"><svg class="plot" id="hascan-plot" role="img" aria-label="Heat map of antibody binding at each position along hemagglutinin for twenty-four influenza strains, with a bar per strain counting the positions bound"></svg></div>
+            <div class="fig-foot">
+              <div class="ramp" aria-hidden="true"><span>no binding</span><i></i><span>strong</span></div>
+              <p class="fig-readout" data-readout></p>
+            </div>
+            <figcaption><span class="fig-num">Fig. 5</span> What the assay reads out, for one simulated serum sample: binding at each position along HA, for every strain in the panel. Stem positions are conserved and react across the whole panel. Head positions are strain-specific and react only on strains close to what that donor has met. Switch donors and the head pattern moves while the stem band stays.</figcaption>
+          </figure>
+        </article>
+
+        <article class="work work--split" id="work-influx">
+          <div class="work-text">
+            <p class="work-meta">Johns Hopkins School of Medicine · Larman Lab · <span class="nw">2024–present</span></p>
+            <h3>InFlux neutralization pipeline</h3>
+            <p>Contributed to the development of InFlux, a novel multiplexed NGS-based influenza neutralization assay, and built its analysis workflow.</p>
+            <p>Snakemake and SLURM workflow for the InFlux influenza neutralization assay, covering read processing, QC, quantification, titration modeling, and neutralization curves.</p>
+            <div class="work-foot">
+              <ul class="tags"><li>Python</li><li>Snakemake</li><li>SLURM</li></ul>
+              <a class="repo" href="https://github.com/avinashkarkada/Influx_pipeline" target="_blank" rel="noopener">Repository<svg class="ico"><use href="#i-out"/></svg></a>
+            </div>
+          </div>
+          <div class="fig-stack">
+            <figure class="fig" id="fig-dag">
+              <div class="fig-head"><p class="fig-title">Workflow rule graph</p></div>
+              <div class="fig-controls">
+                <button type="button" class="btn btn--sm" data-act="toggle"><svg class="ico"><use href="#i-play"/></svg><span>Replay run</span></button>
+              </div>
+              <div class="dag-layout">
+                <div class="fig-stage"><svg class="plot" id="dag-plot" viewBox="0 0 360 494" role="group" aria-label="Rule graph of the InFlux Snakemake workflow"></svg></div>
+                <div class="dag-side">
+                  <div class="dag-info" id="dag-info" aria-live="polite">
+                    <p class="dag-rule">Select a rule</p>
+                    <p class="dag-desc">Each box is a Snakemake rule. Arrows show which rule feeds which.</p>
+                  </div>
+                  <pre class="dag-log" id="dag-log" aria-label="Replay log" tabindex="0"></pre>
+                </div>
+              </div>
+              <figcaption><span class="fig-num">Fig. 6</span> Rule graph of the public InFlux workflow, reduced to direct dependencies. The replay animates rule order; it is not a live job.</figcaption>
+            </figure>
+
+            <figure class="fig" id="fig-4pl">
+              <div class="fig-head"><p class="fig-title">Four-parameter logistic fit</p></div>
+              <div class="fig-controls">
+                <button type="button" class="btn btn--sm" data-act="new">Resample</button>
+                <div class="seg" role="group" aria-label="Noise level">
+                  <button type="button" data-noise="2" aria-pressed="false">Low noise</button>
+                  <button type="button" data-noise="5" aria-pressed="true">Medium</button>
+                  <button type="button" data-noise="10" aria-pressed="false">High</button>
+                </div>
+              </div>
+              <div class="fig-stage"><svg class="plot" id="fourpl-plot" viewBox="0 0 520 360" role="group" aria-label="Neutralization curve: percent neutralization against serum dilution, with a fitted four-parameter logistic curve"></svg></div>
+              <div class="fig-foot">
+                <p class="fig-readout" data-readout></p>
+              </div>
+              <figcaption><span class="fig-num">Fig. 7</span> A four-parameter logistic curve fitted to simulated neutralization data. Drag any point and the curve refits; the marker follows the IC50, the dilution at which half the virus is neutralized, with an approximate 95% interval.</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <!-- Antigenic cartography -->
+        <article class="work work--split work--flip" id="work-cartography">
+          <div class="work-text">
+            <p class="work-meta">Johns Hopkins School of Medicine · Larman Lab</p>
+            <h3>Influenza antigenic cartography</h3>
+            <p>Built the multidimensional-scaling antigenic cartography placing PhIP-Seq reactivity and measured neutralization titres in a shared two-dimensional space over influenza sequence diversity.</p>
+            <div class="work-foot">
+              <ul class="tags"><li>Python</li><li>Bash</li><li>MDS</li></ul>
+              <a class="repo" href="https://github.com/avinashkarkada/Influenza_Antigenic_Cartography" target="_blank" rel="noopener">Repository<svg class="ico"><use href="#i-out"/></svg></a>
+            </div>
+          </div>
+          <figure class="fig" id="fig-mds">
+            <div class="fig-head"><p class="fig-title">Sequence-based antigenic map</p></div>
+            <div class="fig-controls">
+              <button type="button" class="btn btn--sm" data-act="scramble">Scramble</button>
+            </div>
+            <div class="fig-stage"><svg class="plot" id="mds-plot" viewBox="0 0 560 400" role="group" aria-label="Two-dimensional map of simulated antigenic-site sequences from 56 seasons, showing drift as a path across the map"></svg></div>
+            <div class="fig-foot">
+              <ul class="legend">
+                <li class="ramp ramp--time"><span>season 1</span><i></i><span>56</span></li>
+                <li><span class="key key--tri"></span>panel strain</li>
+              </ul>
+              <p class="fig-readout" data-readout></p>
+            </div>
+            <figcaption><span class="fig-num">Fig. 8</span> A sequence-based antigenic map of a simulated lineage. Each point is one antigenic-site sequence; pairwise BLOSUM62 distances are laid out in two dimensions by multidimensional scaling, so drift shows up as a path across the map. Triangles mark a panel of strains spread through time. Scramble the map, or drag a strain, and watch it relax. The pipeline uses classical MDS; this figure uses an iterative variant so the relaxation is visible.</figcaption>
+          </figure>
+        </article>
+
+        <!-- drydock -->
+        <h3 class="arc">Molecular and structural interpretation</h3>
+
+        <article class="work work--split" id="work-drydock">
+          <div class="work-text">
+            <p class="work-meta">Public repository · 2026</p>
+            <h3>drydock</h3>
+            <p>Reproducible high-throughput virtual screening on Linux, with a CLI and a GUI. Prepares receptors and ligand libraries and docks them across four engines. Screens run detached and resume after interruption; pinned dependencies and per-run manifests make results reproducible on another machine.</p>
+            <div class="work-foot">
+              <ul class="tags"><li>Python</li><li>Docking</li><li>CLI + GUI</li></ul>
+              <a class="repo" href="https://github.com/avinashkarkada/drydock" target="_blank" rel="noopener">Repository<svg class="ico"><use href="#i-out"/></svg></a>
+            </div>
+          </div>
+          <figure class="fig fig--code" id="fig-drydock">
+            <div class="fig-head"><p class="fig-title">Quickstart, from the README</p>
+              <button type="button" class="btn btn--sm" data-copy="#drydock-code"><svg class="ico"><use href="#i-copy"/></svg><span>Copy</span></button>
+            </div>
+            <pre class="code" id="drydock-code" tabindex="0"><code><span class="c"># 0. Prepare the receptor (PDB or mmCIF), and check what came out</span>
+drydock prep-receptor -i 2OVX.cif -o receptor
+drydock check-receptor receptor.pdbqt
+
+<span class="c"># 1. Look at the library before committing to it</span>
+drydock survey library.sdf
+
+<span class="c"># 2. Prepare it (streams; never loads the whole file into memory)</span>
+drydock prep-ligands --input library.sdf --out ligands/ --ph 7.4
+
+<span class="c"># 3. Define the search box from the residues lining your site</span>
+drydock box --receptor receptor.pdbqt --residues 187,188,401,405,411,420,421,423
+
+<span class="c"># 4. Screen</span>
+drydock screen --receptor receptor.pdbqt --ligands ligands/ --run runs/mmp9 \
+               --residues 187,188,401,405,411,420,421,423
+
+<span class="c"># progress, from anywhere, while it runs</span>
+drydock status runs/mmp9</code></pre>
+          </figure>
+        </article>
+
+        <!-- MD / FEL -->
+        <article class="work work--split work--flip" id="work-md">
+          <div class="work-text">
+            <p class="work-meta">Kesavardhana Lab, IISc · DRP Lab, SIT · <span class="nw">2021–2024</span></p>
+            <h3>Molecular dynamics and free-energy landscapes</h3>
+            <p>In the Kesavardhana Lab at the Indian Institute of Science, modelled hemagglutinin and neuraminidase variants embedded in a lipid bilayer and ran the simulations on them, looking at how hemagglutinin glycosylation patterns and neuraminidase stalk length affect sialic acid binding.</p>
+            <p>Earlier, in the DRP Lab at SIT, performed molecular dynamics simulations of SAICAR synthase comparing Mg<sup>2+</sup>-bound and apo states, revealing ion-dependent conformational changes; the project received Best Undergraduate Thesis recognition. I also assisted molecular dynamics and free-energy analyses of CETP mutants, showing structural distortions associated with reduced neutral lipid transfer efficiency.</p>
+            <div class="work-foot">
+              <ul class="tags"><li>GROMACS</li><li>Membrane systems</li><li>PCA</li><li>Free energy</li></ul>
+              <a class="repo" href="https://github.com/avinashkarkada/PCA-FEL" target="_blank" rel="noopener">PCA-FEL<svg class="ico"><use href="#i-out"/></svg></a>
+              <a class="repo" href="https://github.com/avinashkarkada/GROMACS-COLAB" target="_blank" rel="noopener">GROMACS-COLAB<svg class="ico"><use href="#i-out"/></svg></a>
+            </div>
+          </div>
+          <figure class="fig" id="fig-fel">
+            <div class="fig-head"><p class="fig-title">Free-energy landscape from sampling</p></div>
+            <div class="fig-controls">
+              <button type="button" class="btn btn--sm" data-act="toggle"><svg class="ico"><use href="#i-pause"/></svg><span>Pause</span></button>
+              <button type="button" class="btn btn--sm" data-act="reset">Reset</button>
+              <div class="seg" role="group" aria-label="Temperature">
+                <button type="button" data-temp="0.7" aria-pressed="false">Cold</button>
+                <button type="button" data-temp="1" aria-pressed="true">Warm</button>
+                <button type="button" data-temp="1.6" aria-pressed="false">Hot</button>
+              </div>
+            </div>
+            <div class="fig-stage fel-stage"><canvas id="fel-canvas" role="img" aria-label="Heat map of a free-energy landscape with three basins, filling in as simulated walkers sample it"></canvas></div>
+            <div class="fig-foot">
+              <div class="ramp" aria-hidden="true"><span>0</span><i></i><span>6 kT</span></div>
+              <p class="fig-readout" data-readout></p>
+            </div>
+            <figcaption><span class="fig-num">Fig. 9</span> A free-energy landscape building up as walkers sample a two-dimensional potential, F = −kT ln P. In a real analysis the axes are the first two principal components of an MD trajectory.</figcaption>
+          </figure>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================== Software ============================== -->
+    <section class="section" id="software">
+      <div class="wrap">
+        <header class="sec-head"><span class="sec-num">03</span><h2>Software</h2></header>
+        <p class="sec-intro">Pipelines and research tools I have built or maintain. Production pipelines developed inside the Larman Lab are described here but are not publicly released.</p>
+
+        <div class="filterbar" data-filter="software">
+          <div class="chips" role="group" aria-label="Filter by language">
+            <button type="button" class="chip" data-value="all" aria-pressed="true">All</button>
+            <button type="button" class="chip" data-value="python" aria-pressed="false">Python</button>
+            <button type="button" class="chip" data-value="r" aria-pressed="false">R</button>
+            <button type="button" class="chip" data-value="shell" aria-pressed="false">Shell</button>
+            <button type="button" class="chip" data-value="jupyter" aria-pressed="false">Jupyter</button>
+          </div>
+          <p class="filter-count" data-count></p>
+        </div>
+
+        <ul class="sw-grid" data-filter-list="software">
+          <li class="sw" data-tags="python">
+            <h3>drydock</h3>
+            <p>Reproducible high-throughput virtual screening on Linux, with a CLI and a GUI. Prepares receptors and ligand libraries and docks them across four engines. Screens run detached and resume after interruption; pinned dependencies and per-run manifests make results reproducible on another machine.</p>
+            <div class="sw-foot"><span class="lang">Python</span><a class="repo" href="https://github.com/avinashkarkada/drydock" target="_blank" rel="noopener">Repository<svg class="ico"><use href="#i-out"/></svg></a></div>
+          </li>
+          <li class="sw" data-tags="r shell">
+            <h3>PhIP-Seq analysis pipeline</h3>
+            <p>Production PhIP-Seq pipeline, which I run and maintain. Takes demultiplexed sequencing reads through alignment, QC, enrichment testing, hit calling, and reactivity scoring.</p>
+            <div class="sw-foot"><span class="lang">R · Bash · SLURM</span><span class="private">Larman Lab · not public</span></div>
+          </li>
+          <li class="sw" data-tags="r">
+            <h3>CALIPER</h3>
+            <p>A groupwise differential method for PhIP-Seq, benchmarked against existing tools using Boston Birth Cohort MMR vaccine data as ground truth.</p>
+            <div class="sw-foot"><span class="lang">R</span><span class="private">Larman Lab · not public</span></div>
+          </li>
+          <li class="sw" data-tags="r">
+            <h3>PhIPmake2</h3>
+            <p>A memory-bounded R rewrite of the PhIP-Seq pipeline's summarisation step. Collapses peptide-level counts to proteins and joins annotations; a drop-in replacement for the original.</p>
+            <div class="sw-foot"><span class="lang">R</span><span class="private">Private repository</span></div>
+          </li>
+          <li class="sw" data-tags="python">
+            <h3>InFlux pipeline</h3>
+            <p>Snakemake and SLURM workflow for the InFlux influenza neutralization assay, covering read processing, QC, quantification, titration modeling, and neutralization curves.</p>
+            <div class="sw-foot"><span class="lang">Python · Snakemake</span><a class="repo" href="https://github.com/avinashkarkada/Influx_pipeline" target="_blank" rel="noopener">Repository<svg class="ico"><use href="#i-out"/></svg></a></div>
+          </li>
+          <li class="sw" data-tags="python shell">
+            <h3>Influenza Antigenic Cartography</h3>
+            <p>Antigenic cartography mapping for H1N1 and H3N2 by multidimensional scaling over hemagglutinin sequence diversity.</p>
+            <div class="sw-foot"><span class="lang">Python</span><a class="repo" href="https://github.com/avinashkarkada/Influenza_Antigenic_Cartography" target="_blank" rel="noopener">Repository<svg class="ico"><use href="#i-out"/></svg></a></div>
+          </li>
+          <li class="sw" data-tags="shell">
+            <h3>PhIP-Seq-Pipeline-Installer</h3>
+            <p>Shell scripts that reproduce the PhIP-Seq pipeline's dependency stack on a clean machine.</p>
+            <div class="sw-foot"><span class="lang">Shell</span><a class="repo" href="https://github.com/avinashkarkada/PhIP-Seq-Pipeline-Installer" target="_blank" rel="noopener">Repository<svg class="ico"><use href="#i-out"/></svg></a></div>
+          </li>
+          <li class="sw" data-tags="jupyter">
+            <h3>GROMACS-COLAB</h3>
+            <p>Jupyter notebooks for running GROMACS molecular dynamics simulations in Colab.</p>
+            <div class="sw-foot"><span class="lang">Jupyter Notebook</span><a class="repo" href="https://github.com/avinashkarkada/GROMACS-COLAB" target="_blank" rel="noopener">Repository<svg class="ico"><use href="#i-out"/></svg></a></div>
+          </li>
+        </ul>
+
+        <h3 class="sub">Smaller tools</h3>
+        <ul class="tools" data-filter-list="software">
+          <li data-tags="python"><a href="https://github.com/avinashkarkada/trial-data-dashboard" target="_blank" rel="noopener">Immune-cell trial dashboard</a><span>models longitudinal immune-cell frequencies from a clinical-trial dataset and serves responder comparisons through an interactive dashboard.</span></li>
+          <li data-tags="python"><a href="https://github.com/avinashkarkada/MSA-Gap-Analyzer" target="_blank" rel="noopener">MSA-Gap-Analyzer</a><span>generates and optimizes multiple sequence alignments by gap profile.</span></li>
+          <li data-tags="python"><a href="https://github.com/avinashkarkada/Modeller-scripts" target="_blank" rel="noopener">MODELLER-GUI</a><span>Tkinter front end that simplifies MODELLER homology-modeling workflows.</span></li>
+          <li data-tags="python"><a href="https://github.com/avinashkarkada/pdbqt_maker" target="_blank" rel="noopener">pdbqt_maker</a><span>converts SDF, PDB, and MOL2 files to PDBQT for docking.</span></li>
+          <li data-tags="python"><a href="https://github.com/avinashkarkada/RMSD-RMSF-graph-plotter" target="_blank" rel="noopener">RMSD/RMSF graph plotter</a><span>GUI for plotting RMSD and RMSF directly from GROMACS .xvg output.</span></li>
+          <li data-tags="python jupyter shell"><a href="https://github.com/avinashkarkada/PCA-FEL" target="_blank" rel="noopener">PCA-FEL</a><span>principal component analysis and free-energy landscape plots from MD trajectories.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================== Experience ============================== -->
+    <section class="section" id="experience">
+      <div class="wrap">
+        <header class="sec-head"><span class="sec-num">04</span><h2>Experience</h2></header>
+
+        <div class="xp-list" style="--months:84">
+          <div class="xp-axis" aria-hidden="true">
+            <span></span>
+            <ol><li>2020</li><li>2021</li><li>2022</li><li>2023</li><li>2024</li><li>2025</li><li>2026</li></ol>
+          </div>
+
+          <details class="xp" open>
+            <summary>
+              <span class="xp-info"><strong>Johns Hopkins School of Medicine</strong><span>Bioinformatics Engineer</span><time>09/2024 – Present</time></span>
+              <span class="xp-track"><i class="xp-bar xp-bar--now" style="--s:56;--e:82" data-present></i></span>
+              <svg class="ico xp-chev"><use href="#i-chev"/></svg>
+            </summary>
+            <div class="xp-body">
+              <p>I lead the computational analysis for an R01-funded <a href="https://doi.org/10.3389/fbinf.2024.1424202" target="_blank" rel="noopener">PhIP-Seq</a> antibody-profiling project in Dr. Benjamin H. Larman's lab, across early-onset colorectal cancer, late-onset colorectal cancer, polyp, and healthy control cohorts, owning the analysis strategy, QC, statistics, and interpretation. I also design and maintain the computational workflows for InFlux, a U01-funded highly multiplexed NGS-based influenza A neutralization assay, including cohort-level QC, validation logic, and reproducible reporting.</p>
+            </div>
+          </details>
+
+          <details class="xp">
+            <summary>
+              <span class="xp-info"><strong>Infinity Bio, Inc.</strong><span>Summer Bioinformatics Intern</span><time>06/2025 – 08/2025</time></span>
+              <span class="xp-track"><i class="xp-bar" style="--s:65;--e:68"></i></span>
+              <svg class="ico xp-chev"><use href="#i-chev"/></svg>
+            </summary>
+            <div class="xp-body">
+              <p>Based in Baltimore, USA, I benchmarked and optimized NGS-based <a href="https://www.infinitybio.com/mipsa/" target="_blank" rel="noopener">MIPSA</a> analysis pipelines on AWS EC2 by evaluating aligners and improving I/O handling, reducing runtime from approximately 24 hours to 6 hours and lowering compute cost by approximately 75%. I contributed to EpitopeFindeR 2, a reproducible peptide-sequence pipeline that uses FoldDisco-based structural mapping to identify continuous and discontinuous epitopes and localize antibody binding sites on antigen structures. I also built <a href="https://latch.bio/product/plots" target="_blank" rel="noopener">Latch Bio</a> workflows and a sequence-space visualization module so that client-facing epitope mapping analyses could be run and inspected without engineering support.</p>
+            </div>
+          </details>
+
+          <details class="xp">
+            <summary>
+              <span class="xp-info"><strong>Indian Institute of Science</strong><span>Junior Research Fellow</span><time>11/2023 – 08/2024</time></span>
+              <span class="xp-track"><i class="xp-bar" style="--s:46;--e:56"></i></span>
+              <svg class="ico xp-chev"><use href="#i-chev"/></svg>
+            </summary>
+            <div class="xp-body">
+              <p>I have worked on various computational biology projects, including the study <a href="https://doi.org/10.1128/spectrum.00948-25" target="_blank" rel="noopener">“Decoding Non-Human Mammalian Adaptive Signatures of 2.3.4.4b H5N1 to Assess its Human Adaptive Potential”</a>, which provided a quantitative assessment of adaptive signatures in non-human mammals to evaluate the zoonotic potential of the 2.3.4.4b H5N1 influenza virus. Another project, <a href="https://doi.org/10.1016/j.isci.2024.111444" target="_blank" rel="noopener">“Bat RNA Viruses Employ Viral RHIMs to Orchestrate Species-Specific Cell Death Programs Linked to Z-RNA Sensing and ZBP1-RIPK3 Signaling”</a>, explored how bat RNA viruses utilize viral RHIMs to regulate species-specific cell death pathways via Z-RNA sensing and ZBP1-RIPK3 signaling. I also helped show that neuraminidase stalk length and hemagglutinin glycosylation patterns can bias segment pairing and promote reassortment routes linked to the emergence of highly pathogenic clade 2.3.4.4b A(H5N1).</p>
+            </div>
+          </details>
+
+          <details class="xp">
+            <summary>
+              <span class="xp-info"><strong>DRP Lab, SIT, Tumkur, India</strong><span>Project intern</span><time>11/2021 – 08/2023</time></span>
+              <span class="xp-track"><i class="xp-bar" style="--s:22;--e:44"></i></span>
+              <svg class="ico xp-chev"><use href="#i-chev"/></svg>
+            </summary>
+            <div class="xp-body">
+              <p>Performed molecular dynamics simulations of SAICAR synthase comparing Mg<sup>2+</sup>-bound and apo states, revealing ion-dependent conformational changes; the project received Best Undergraduate Thesis recognition. I also assisted molecular dynamics and free-energy analyses of CETP mutants, showing structural distortions associated with reduced neutral lipid transfer efficiency.</p>
+            </div>
+          </details>
+
+          <details class="xp">
+            <summary>
+              <span class="xp-info"><strong>NITTE University, Mangalore, India</strong><span>Summer research intern</span><time>08/2022 – 11/2022</time></span>
+              <span class="xp-track"><i class="xp-bar" style="--s:31;--e:35"></i></span>
+              <svg class="ico xp-chev"><use href="#i-chev"/></svg>
+            </summary>
+            <div class="xp-body">
+              <p>Performed virtual screening of natural product libraries against LuxS, followed by docking, ADMET, and MD/MM-PBSA validation to nominate hits that could disrupt AI-2 signaling in <em>Helicobacter pylori</em>.</p>
+            </div>
+          </details>
+
+          <details class="xp">
+            <summary>
+              <span class="xp-info"><strong>Insilicomics Pvt. Ltd., Ooty, India</strong><span>Research Associate</span><time>05/2020 – 08/2023</time></span>
+              <span class="xp-track"><i class="xp-bar" style="--s:4;--e:44"></i></span>
+              <svg class="ico xp-chev"><use href="#i-chev"/></svg>
+            </summary>
+            <div class="xp-body">
+              <p>Worked on molecular dynamics simulations, virtual screening, genome informatics, and statistical data analysis while building Python scripts, Bash workflows, and GUI tools for research use. I also supported practical bioinformatics training programs and mentored students through hands-on computational biology workflows.</p>
+            </div>
+          </details>
+
+          <details class="xp">
+            <summary>
+              <span class="xp-info"><strong>Pristine Organics, Bangalore, India</strong><span>Summer research intern</span><time>05/2021 – 10/2021</time></span>
+              <span class="xp-track"><i class="xp-bar" style="--s:16;--e:22"></i></span>
+              <svg class="ico xp-chev"><use href="#i-chev"/></svg>
+            </summary>
+            <div class="xp-body">
+              <p>Worked in R&amp;D with a focus on dietary management for patients with inborn errors of metabolic disorders.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== Publications ============================== -->
+    <section class="section" id="publications">
+      <div class="wrap">
+        <header class="sec-head"><span class="sec-num">05</span><h2>Publications</h2></header>
+
+        <div class="filterbar" data-filter="pubs">
+          <label class="search"><svg class="ico"><use href="#i-search"/></svg><span class="vh">Search publications</span><input type="search" placeholder="Search title, author, journal" data-search autocomplete="off"></label>
+          <div class="chips" role="group" aria-label="Filter by topic">
+            <button type="button" class="chip" data-value="all" aria-pressed="true">All</button>
+            <button type="button" class="chip" data-value="virology" aria-pressed="false">Virology</button>
+            <button type="button" class="chip" data-value="antibacterial" aria-pressed="false">Antibacterial</button>
+            <button type="button" class="chip" data-value="enzyme" aria-pressed="false">Enzyme inhibition</button>
+            <button type="button" class="chip" data-value="cancer" aria-pressed="false">Anticancer</button>
+            <button type="button" class="chip" data-value="radioprotection" aria-pressed="false">Radioprotection</button>
+          </div>
+          <p class="filter-count" data-count></p>
+        </div>
+
+        <ol class="pubs" data-filter-list="pubs">
+          <li class="pub" data-tags="enzyme">
+            <span class="pub-year">2026</span>
+            <div>
+              <h3><a href="https://doi.org/10.1016/j.bioorg.2026.109667" target="_blank" rel="noopener">Structure-guided discovery of 4-phenyl-5-p-tolyloxymethyl-4H-1,2,4-triazole thioethers as 15-lipoxygenase inhibitors using integrated in vitro, structure-activity relationship, in silico, cytotoxicity towards MCF-7 cell line, DNA docking and MD simulation methods</a></h3>
+              <p class="pub-authors">Deeba Nawaz, Bushra Bashir, Ambar Iqbal, Ayesha Momen, Muhammad Ashraf, <strong>Avinash Karkada Ashok</strong>, Ayesha Azhar, Naheed Riaz</p>
+              <p class="pub-venue"><em>Bioorganic Chemistry</em></p>
+            </div>
+          </li>
+          <li class="pub" data-tags="virology">
+            <span class="pub-year">2025</span>
+            <div>
+              <h3><a href="https://doi.org/10.1128/spectrum.00948-25" target="_blank" rel="noopener">Decoding non-human mammalian adaptive signatures of 2.3.4.4b H5N1 to assess its human adaptive potential</a></h3>
+              <p class="pub-authors">Ranjana Nataraj, <strong>Avinash Karkada Ashok</strong>, Ayushi Amin Dey, Sannula Kesavardhana</p>
+              <p class="pub-venue"><em>Microbiology Spectrum</em></p>
+            </div>
+          </li>
+          <li class="pub" data-tags="antibacterial">
+            <span class="pub-year">2025</span>
+            <div>
+              <h3><a href="https://doi.org/10.1016/j.compbiomed.2024.109409" target="_blank" rel="noopener">Computational-driven discovery of AI-2 quorum sensing inhibitor targeting the 5′-methylthioadenosine/S-adenosylhomocysteine nucleosidase (MTAN) to combat drug-resistant <em>Helicobacter pylori</em></a></h3>
+              <p class="pub-authors">Manish Kumar, <strong>Avinash Karkada Ashok</strong>, Thejaswi Bhat, Krishnakumar Ballamoole, Pavan Gollapalli</p>
+              <p class="pub-venue"><em>Computers in Biology and Medicine</em></p>
+            </div>
+          </li>
+          <li class="pub" data-tags="enzyme">
+            <span class="pub-year">2025</span>
+            <div>
+              <h3><a href="https://doi.org/10.1016/j.ijbiomac.2025.143665" target="_blank" rel="noopener">Multimodal evaluation of lipoxygenase-targeting NSAIDs using integrated in vitro, SAR, in silico, cytotoxicity towards MCF-7 cell line, DNA docking and MD simulation approaches</a></h3>
+              <p class="pub-authors">Ambar Iqbal, Wasim Abbas, Samina Ejaz, Naheed Riaz, <strong>Avinash Karkada Ashok</strong>, Muhammad Munawar Hayat, Muhammad Ashraf</p>
+              <p class="pub-venue"><em>International Journal of Biological Macromolecules</em></p>
+            </div>
+          </li>
+          <li class="pub" data-tags="enzyme">
+            <span class="pub-year">2025</span>
+            <div>
+              <h3><a href="https://doi.org/10.1016/j.molstruc.2024.139963" target="_blank" rel="noopener">Exploration of 4-tolyl-5-(p-tolyloxymethyl)-4H-1,2,4-triazole thioethers as potent 15-LOX inhibitors supported by in vitro, in silico, MD simulation and DNA binding studies</a></h3>
+              <p class="pub-authors">Ambar Iqbal, Muhammad Ashraf, <strong>Avinash Karkada Ashok</strong>, Farah Chafika Kaouche, Bushra Bashir, Abdul Qadir, Naheed Riaz</p>
+              <p class="pub-venue"><em>Journal of Molecular Structure</em></p>
+            </div>
+          </li>
+          <li class="pub" data-tags="enzyme">
+            <span class="pub-year">2025</span>
+            <div>
+              <h3><a href="https://doi.org/10.1002/slct.202505316" target="_blank" rel="noopener">Exploring Antiurease Activity of Antibiotics: Insights From In Vitro, SAR, In Silico, DNA Docking, and MD Simulation Studies</a></h3>
+              <p class="pub-authors">Sara Mujtaba, Misbah Aslam, Ambar Iqbal, Naheed Riaz, <strong>Avinash Karkada Ashok</strong>, Muhammad Munawar Hayat, Muhammad Ashraf</p>
+              <p class="pub-venue"><em>ChemistrySelect</em></p>
+            </div>
+          </li>
+          <li class="pub" data-tags="virology">
+            <span class="pub-year">2024</span>
+            <div>
+              <h3><a href="https://doi.org/10.1016/j.isci.2024.111444" target="_blank" rel="noopener">Bat RNA viruses employ viral RHIMs orchestrating species-specific cell death programs linked to Z-RNA sensing and ZBP1-RIPK3 signaling</a></h3>
+              <p class="pub-authors">Sanchita Mishra, Disha Jain, Ayushi Amin Dey, Sahana Nagaraja, Mansi Srivastava, Oyahida Khatun, Keerthana Balamurugan, Micky Anand, <strong>Avinash Karkada Ashok</strong>, Shashank Tripathi, Mahipal Ganji, Sannula Kesavardhana</p>
+              <p class="pub-venue"><em>iScience</em></p>
+            </div>
+          </li>
+          <li class="pub" data-tags="antibacterial">
+            <span class="pub-year">2024</span>
+            <div>
+              <h3><a href="https://doi.org/10.1080/07391102.2023.2210674" target="_blank" rel="noopener">High-throughput screening and molecular dynamics simulations of natural products targeting LuxS/AI-2 system as a novel antibacterial strategy for antibiotic resistance in <em>Helicobacter pylori</em></a></h3>
+              <p class="pub-authors"><strong>Avinash Karkada Ashok</strong>, Tamizh Selvan Gnanasekaran, Hulikal Shivashankara Santosh Kumar, Koigoora Srikanth, Nayana Prakash, Pavan Gollapalli</p>
+              <p class="pub-venue"><em>Journal of Biomolecular Structure and Dynamics</em></p>
+            </div>
+          </li>
+          <li class="pub" data-tags="cancer">
+            <span class="pub-year">2024</span>
+            <div>
+              <h3><a href="https://doi.org/10.1080/07391102.2023.2220045" target="_blank" rel="noopener">A combined in vitro and molecular dynamics simulation studies unveil the molecular basis of the anticancer potential of piperine targeting AKT1 against prostate cancer</a></h3>
+              <p class="pub-authors">Prakash Nayana, Hanumanthappa Manjunatha, Pavan Gollapalli, <strong>Avinash Karkada Ashok</strong>, Preema Karal Andrade, Vijayalaksmi V</p>
+              <p class="pub-venue"><em>Journal of Biomolecular Structure and Dynamics</em></p>
+            </div>
+          </li>
+          <li class="pub" data-tags="radioprotection">
+            <span class="pub-year">2024</span>
+            <div>
+              <h3><a href="https://doi.org/10.1080/07391102.2023.2208224" target="_blank" rel="noopener">System-level protein interaction network analysis and molecular dynamics study reveal interaction of ferulic acid with PTGS2 as a natural radioprotector</a></h3>
+              <p class="pub-authors">Pavan Gollapalli, <strong>Avinash Karkada Ashok</strong>, Tamizh Selvan G</p>
+              <p class="pub-venue"><em>Journal of Biomolecular Structure and Dynamics</em></p>
+            </div>
+          </li>
+          <li class="pub" data-tags="enzyme">
+            <span class="pub-year">2024</span>
+            <div>
+              <h3><a href="https://doi.org/10.1021/acsomega.3c09355" target="_blank" rel="noopener">Antiurease Activity of Antibiotics: In Vitro, In Silico, Structure Activity Relationship, and MD Simulations of Cephalosporins and Fluoroquinolones</a></h3>
+              <p class="pub-authors">Misbah Aslam, Jameel Rahman, Ambar Iqbal, Sara Mujtaba, <strong>Avinash Karkada Ashok</strong>, Farah Chafika Kaouche, Muhammad Munawar Hayat, Mouqadus-Un Nisa, Muhammad Ashraf</p>
+              <p class="pub-venue"><em>ACS Omega</em></p>
+            </div>
+          </li>
+          <li class="pub" data-tags="enzyme">
+            <span class="pub-year">2024</span>
+            <div>
+              <h3><a href="https://doi.org/10.1016/j.heliyon.2024.e24470" target="_blank" rel="noopener">Anti-enzymatic and DNA docking studies of montelukast: A multifaceted molecular scaffold with in vitro investigations, molecular expression analysis and molecular dynamics simulations</a></h3>
+              <p class="pub-authors">Shawana Abdullah, Ambar Iqbal, <strong>Avinash Karkada Ashok</strong>, Farah Chafika Kaouche, Misbah Aslam, Safdar Hussain, Jameel Rahman, Muhammad Munawar Hayat, Muhammad Ashraf</p>
+              <p class="pub-venue"><em>Heliyon</em></p>
+            </div>
+          </li>
+          <li class="pub" data-tags="cancer">
+            <span class="pub-year">2024</span>
+            <div>
+              <h3><a href="https://doi.org/10.1007/s11164-024-05305-6" target="_blank" rel="noopener">Glutamic acid-catalyzed synthesis of dihydroquinazolinone: anticancer activity, electrochemical behavior, molecular docking, dynamics, simulations and drug-likeness studies</a></h3>
+              <p class="pub-authors">Radhika Mane, Deepak A. Yaraguppi, <strong>Avinash Karkada Ashok</strong>, Bhavya Gangadharappa, K. B. Chandrakala, Kantharaju Kamanna</p>
+              <p class="pub-venue"><em>Research on Chemical Intermediates</em></p>
+            </div>
+          </li>
+          <li class="pub" data-tags="radioprotection">
+            <span class="pub-year">2023</span>
+            <div>
+              <h3><a href="https://doi.org/10.1080/07391102.2022.2137245" target="_blank" rel="noopener">Nrf2-regulated antioxidant response ameliorating ionizing radiation-induced damages explored through in vitro and molecular dynamics simulations</a></h3>
+              <p class="pub-authors">Tamizh Selvan G, <strong>Avinash Karkada Ashok</strong>, Aditya Rao S. J, Pavan Gollapalli, Vishakh R, Suchetha Kumari N, Nabo K. Chaudhury</p>
+              <p class="pub-venue"><em>Journal of Biomolecular Structure and Dynamics</em></p>
+            </div>
+          </li>
+        </ol>
+        <p class="empty" data-empty="pubs" hidden>No publications match that search.</p>
+      </div>
+    </section>
+
+    <!-- ============================== Skills ============================== -->
+    <section class="section" id="skills">
+      <div class="wrap">
+        <header class="sec-head"><span class="sec-num">06</span><h2>Skills</h2></header>
+
+        <div class="filterbar" data-filter="skills">
+          <label class="search"><svg class="ico"><use href="#i-search"/></svg><span class="vh">Search skills</span><input type="search" placeholder="Try “seq”, “dock”, or “R”" data-search autocomplete="off"></label>
+          <p class="filter-count" data-count></p>
+        </div>
+
+        <div class="skill-groups" data-filter-list="skills" data-filter-nested>
+          <section class="skill-group">
+            <h3>Programming and Platforms</h3>
+            <ul class="skill-list"><li>Python</li><li>R</li><li>Bash</li><li>SQL</li><li>Java</li><li>Git</li><li>GitHub</li><li>Linux</li><li>Unix</li><li>HPC</li><li>SLURM</li><li>AWS</li><li>EC2</li><li>S3</li><li>Conda</li><li>Mamba</li><li>Jupyter</li></ul>
+          </section>
+          <section class="skill-group">
+            <h3>Bioinformatics, NGS, and Omics</h3>
+            <ul class="skill-list"><li>PhIP-seq</li><li>RNA-seq</li><li>scRNA-seq</li><li>ChIP-seq</li><li>WGS</li><li>Biopython</li><li>Bioconductor</li><li>SAMtools</li><li>BCFtools</li><li>BEDTools</li><li>Bowtie</li><li>Bowtie2</li><li>BWA</li><li>Minimap2</li><li>Kallisto</li><li>Salmon</li><li>STAR</li><li>HISAT2</li><li>Cutadapt</li><li>Trimmomatic</li><li>FastQC</li><li>GATK</li><li>IGV</li><li>SRA Toolkit</li><li>BLAST</li><li>Clustal Omega</li><li>MAFFT</li><li>EMBOSS</li><li>CD-HIT</li><li>HMMER</li><li>edgeR</li><li>DESeq2</li><li>limma</li><li>Seurat</li><li>Scanpy</li><li>MEGA</li><li>IQ-TREE</li><li>Comparative genomics</li><li>Genome informatics</li><li>Epitope mapping</li></ul>
+          </section>
+          <section class="skill-group">
+            <h3>Computational Biology and Data Science</h3>
+            <ul class="skill-list"><li>pandas</li><li>NumPy</li><li>SciPy</li><li>scikit-learn</li><li>XGBoost</li><li>dplyr</li><li>tidyr</li><li>randomForest</li><li>SVM</li><li>LASSO</li><li>PCA</li><li>UMAP</li><li>t-SNE</li><li>Clustering</li><li>Differential expression</li><li>Enrichment analysis</li><li>Pathway analysis</li><li>Network analysis</li><li>Sequence-space analysis</li></ul>
+          </section>
+          <section class="skill-group">
+            <h3>Workflow and Reproducibility</h3>
+            <ul class="skill-list"><li>Snakemake</li><li>Latch</li><li>Docker</li><li>Singularity</li></ul>
+          </section>
+          <section class="skill-group">
+            <h3>Structural Biology, Docking, and Molecular Modeling</h3>
+            <ul class="skill-list"><li>PyMOL</li><li>UCSF ChimeraX</li><li>Chimera</li><li>VMD</li><li>MODELLER</li><li>AlphaFold</li><li>ESMFold</li><li>Rosetta</li><li>HADDOCK</li><li>AutoDock</li><li>AutoDock Vina</li><li>GROMACS</li><li>AMBER</li><li>gmx_MMPBSA</li><li>FoldX</li><li>Maestro</li><li>Schrödinger</li><li>CP2K</li><li>Gaussian</li><li>ORCA</li><li>RDKit</li><li>Open Babel</li><li>Molecular dynamics</li><li>Protein structure prediction</li><li>Structural mapping</li><li>Virtual screening</li><li>Free energy analysis</li><li>MM/PBSA</li><li>ADMET</li><li>Protein-protein docking</li><li>Protein-ligand docking</li><li>Protein-DNA docking</li><li>Nucleic acid docking</li><li>Binder design</li></ul>
+          </section>
+          <section class="skill-group">
+            <h3>Visualization and Reporting</h3>
+            <ul class="skill-list"><li>ggplot2</li><li>plotly</li><li>GraphPad Prism</li><li>BioRender</li><li>LaTeX</li><li>R Markdown</li><li>Quarto</li><li>Shiny</li><li>Dash</li><li>Cytoscape</li><li>UCSC Genome Browser</li><li>Ensembl Genome Browser</li></ul>
+          </section>
+          <section class="skill-group">
+            <h3>Wet Lab Techniques</h3>
+            <ul class="skill-list"><li>Bacterial cell culture</li><li>Agarose gel electrophoresis</li><li>PCR</li><li>SDS-PAGE</li><li>Western blot</li><li>Sample handling and QC</li><li>Basic ELISA handling</li></ul>
+          </section>
+        </div>
+        <p class="empty" data-empty="skills" hidden>Nothing matches that search.</p>
+      </div>
+    </section>
+
+    <!-- ============================== Education & recognition ============================== -->
+    <section class="section" id="background">
+      <div class="wrap">
+        <header class="sec-head"><span class="sec-num">07</span><h2>Education &amp; recognition</h2></header>
+        <div class="bg-grid">
+          <div>
+            <h3 class="sub">Education</h3>
+            <ul class="edu">
+              <li><strong>Master of Science, Johns Hopkins University</strong><span>Bioinformatics</span><time>Aug 2024 – May 2026</time></li>
+              <li><strong>Bachelor of Engineering, Visvesvaraya Technological University</strong><span>Biotechnology, First Class with Distinction</span><time>Jun 2019 – Jul 2023</time></li>
             </ul>
-         </div>
-      </div>
-
-      <p class="scrolldown">
-         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
-      </p>
-
-   </header>
-   <!-- Header End -->
-
-
-   <!-- About Section
-   ================================================== -->
-   <section id="about">
-      <div class="row">
-         <div class="three columns">
-            <img class="profile-pic" src="images/profilepic.jpg" alt="Profile pic" />
-         </div>
-
-         <div class="nine columns main-col">
-            <h2>About Me</h2>
-            <p align="justify">
-               I am a computational biologist with an M.S. in Bioinformatics from Johns Hopkins University with a passion for working
-               at the intersection of biology, data, and software engineering. I have experience in bioinformatics and omics analytics
-               (NGS and immune profiling), biostatistics/visualization, as well as ML-driven discovery with a strong focus on reproducibility
-               using git, Linux/HPC and cloud environments. I also have a background in drug discovery and structural biology/molecular
-               modeling/molecular dynamics simulations, providing a computational chemistry perspective where appropriate. I have
-               contributed across academic and industry settings, collaborate well with cross-functional teams, and care deeply about
-               rigorous, biologically grounded analysis, from experimental context to interpretation and communication of results.
-            </p>
-
-            <div class="row">
-               <div class="columns download">
-                  <p>
-                     <a href="files/Avinash_Karkada_Ashok_CV.pdf" class="button" download>
-                        <i class="fa fa-download"></i>Download Resume
-                     </a>
-                  </p>
-               </div>
-            </div> <!-- end row -->
-         </div> <!-- end .main-col -->
-      </div>
-   </section>
-   <!-- About Section End-->
-
-
-   <!-- Resume (Education) Section
-   ================================================== -->
-   <section id="resume">
-      <div class="row education">
-         <div class="three columns header-col">
-            <h1><span>Education</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-            <div class="row item">
-               <div class="twelve columns">
-                  <h3>Master of Science, Johns Hopkins University</h3>
-                  <p class="info">Bioinformatics <span>&bull;</span>
-                     <em class="date">Aug 2024 - May 2026</em>
-                  </p>
-               </div>
-            </div> <!-- item end -->
-
-            <div class="row item">
-               <div class="twelve columns">
-                  <h3>Bachelor of Engineering, Visvesvaraya Technological University</h3>
-                  <p class="info">Biotechnology, First Class with Distinction <span>&bull;</span>
-                     <em class="date">Jun 2019 - Jul 2023</em>
-                  </p>
-               </div>
-            </div> <!-- item end -->
-         </div> <!-- main-col end -->
-      </div> <!-- End Education -->
-   </section>
-   <!-- Resume Section End -->
-
-
-   <!-- Work (Experience) Section
-   ================================================== -->
-   <section id="work">
-      <div class="row work">
-         <div class="three columns header-col">
-            <h1><span>Works</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <!-- Johns Hopkins School of Medicine -->
-            <div class="row item">
-               <div class="twelve columns">
-                  <h3>JOHNS HOPKINS SCHOOL OF MEDICINE</h3>
-                  <p class="info">Bioinformatics Engineer <span>&bull;</span> 
-                     <em class="date">09/2024 - Present</em>
-                  </p>
-                  <p align="justify">
-                     I lead the computational analysis for an R01-funded <a href="https://doi.org/10.3389/fbinf.2024.1424202" target="_blank">PhIP-Seq</a>
-                     antibody-profiling project in Dr. Benjamin H. Larman's lab, across early-onset colorectal cancer,
-                     late-onset colorectal cancer, polyp, and healthy control cohorts, owning the analysis strategy, QC,
-                     statistics, and interpretation. I am developing an interpretable machine learning framework based on
-                     stability selection to recover reproducible cancer-associated antibody-reactivity signatures from
-                     sparse, high-dimensional PhIP-Seq data. I also design and maintain the computational workflows for
-                     InFlux, a U01-funded highly multiplexed NGS-based influenza A neutralization assay, including
-                     cohort-level QC, validation logic, and reproducible reporting.
-                  </p>
-               </div>
-            </div> <!-- item end -->
-            
-            <!-- Infinity Bio, Inc. -->
-            <div class="row item">
-               <div class="twelve columns">
-                  <h3>INFINITY BIO, INC.</h3>
-                  <p class="info">Summer Bioinformatics Intern <span>&bull;</span> 
-                     <em class="date">06/2025 - 08/2025</em>
-                  </p>
-                  <p align="justify">
-                     Based in Baltimore, USA, I benchmarked and optimized NGS-based <a href="https://www.infinitybio.com/mipsa/" target="_blank">MIPSA</a>
-                     analysis pipelines on AWS EC2 by evaluating aligners and improving I/O handling, reducing runtime from
-                     approximately 24 hours to 6 hours and lowering compute cost by approximately 75%. I contributed to
-                     EpitopeFindeR 2, a reproducible peptide-sequence pipeline that uses FoldDisco-based structural mapping
-                     to identify continuous and discontinuous epitopes and localize antibody binding sites on antigen
-                     structures. I also built <a href="https://latch.bio/product/plots" target="_blank">Latch Bio</a> workflows
-                     and a sequence-space visualization module so that client-facing epitope mapping analyses could be run
-                     and inspected without engineering support.
-                  </p>
-               </div>
-            </div> <!-- item end -->
-
-            <!-- Indian Institute of Science -->
-            <div class="row item">
-               <div class="twelve columns">
-                  <h3>INDIAN INSTITUTE OF SCIENCE</h3>
-                  <p class="info">Junior Research Fellow <span>&bull;</span> 
-                     <em class="date">11/2023 - 08/2024</em>
-                  </p>
-                  <p align="justify">
-                     I have worked on various computational biology projects, including the study 
-                     <a href="https://doi.org/10.1128/spectrum.00948-25" target="_blank">
-                     “Decoding Non-Human Mammalian Adaptive Signatures of 2.3.4.4b H5N1 to Assess its Human Adaptive Potential”
-                     </a>, which provided a quantitative assessment of adaptive signatures in non-human 
-                     mammals to evaluate the zoonotic potential of the 2.3.4.4b H5N1 influenza virus. Another project, 
-                     <a href="https://doi.org/10.1016/j.isci.2024.111444" target="_blank">
-                     “Bat RNA Viruses Employ Viral RHIMs to Orchestrate Species-Specific Cell Death Programs Linked to Z-RNA Sensing and ZBP1-RIPK3 Signaling”
-                     </a>, explored how bat RNA viruses utilize viral RHIMs to regulate species-specific 
-                     cell death pathways via Z-RNA sensing and ZBP1-RIPK3 signaling. I also helped show that
-                     neuraminidase stalk length and haemagglutinin glycosylation patterns can bias segment pairing
-                     and promote reassortment routes linked to the emergence of highly pathogenic clade 2.3.4.4b A(H5N1).
-                  </p>
-               </div>
-            </div> <!-- item end -->
-
-            <!-- 3: DRP LAB, SIT, TUMKUR, INDIA -->
-            <div class="row item">
-               <div class="twelve columns">
-                  <h3>DRP LAB, SIT, TUMKUR, INDIA</h3>
-                  <p class="info">Project intern <span>&bull;</span>
-                     <em class="date">11/2021 - 08/2023</em>
-                  </p>
-                  <p align="justify">
-                     Performed molecular dynamics simulations of SAICAR synthase comparing Mg<sup>2+</sup>-bound and
-                     apo states, revealing ion-dependent conformational changes; the project received Best Undergraduate
-                     Thesis recognition. I also assisted molecular dynamics and free-energy analyses of CETP mutants,
-                     showing structural distortions associated with reduced neutral lipid transfer efficiency.
-                  </p>
-               </div>
-            </div> <!-- item end -->
-
-            <!-- NITTE University -->
-            <div class="row item">
-               <div class="twelve columns">
-                  <h3>NITTE UNIVERSITY, MANGALORE, INDIA</h3>
-                  <p class="info">Summer research intern <span>&bull;</span>
-                     <em class="date">08/2022 - 11/2022</em>
-                  </p>
-                  <p align="justify">
-                     Performed virtual screening of natural product libraries against LuxS, followed by docking, ADMET,
-                     and MD/MM-PBSA validation to nominate hits that could disrupt AI-2 signaling in
-                     <em>Helicobacter pylori</em>.
-                  </p>
-               </div>
-            </div> <!-- item end -->
-
-            <!-- Insilicomics Pvt. Ltd., OOTY, INDIA -->
-            <div class="row item">
-               <div class="twelve columns">
-                  <h3>INSILICOMICS Pvt. Ltd., OOTY, INDIA</h3>
-                  <p class="info">Research Associate <span>&bull;</span>
-                     <em class="date">05/2020 - 08/2023</em>
-                  </p>
-                  <p align="justify">
-                     Worked on molecular dynamics simulations, virtual screening, genome informatics, and statistical
-                     data analysis while building Python scripts, Bash workflows, and GUI tools for research use.
-                     I also supported practical bioinformatics training programs and mentored students through
-                     hands-on computational biology workflows.
-                  </p>
-               </div>
-            </div> <!-- item end -->
-
-            <!-- 6: PRISTINE ORGANICS, BANGALORE, INDIA -->
-            <div class="row item">
-               <div class="twelve columns">
-                  <h3>PRISTINE ORGANICS, BANGALORE, INDIA</h3>
-                  <p class="info">Summer research intern <span>&bull;</span> 
-                     <em class="date">05/2021 - 10/2021</em>
-                  </p>
-                  <p align="justify">
-                     Worked in R&amp;D with a focus on dietary management for patients 
-                     with inborn errors of metabolic disorders.
-                  </p>
-               </div>
-            </div> <!-- item end -->
-         </div> <!-- .nine.columns.main-col -->
-      </div> <!-- .row.work -->
-   </section>
-   <!-- Work Section End -->
-
-
-   <!-- Pipelines & Research Software Section
-   ================================================== -->
-   <section id="software">
-      <div class="row software">
-         <div class="three columns header-col">
-            <h1><span>Software</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-            <p class="section-intro">
-               Pipelines and research tools I have built or maintain. Production pipelines developed inside the
-               Larman Lab are described here but are not publicly released.
-            </p>
-
-            <div class="proj-grid">
-
-               <div class="proj-card">
-                  <h3>drydock</h3>
-                  <p class="proj-desc">
-                     Reproducible high-throughput virtual screening on Linux, with a CLI and a GUI. Prepares receptors
-                     and ligand libraries and docks them across four engines. Screens run detached and resume after
-                     interruption; pinned dependencies and per-run manifests make results reproducible on another machine.
-                  </p>
-                  <p class="proj-links">
-                     <a href="https://github.com/avinashkarkada/drydock" target="_blank" rel="noopener">Repository</a>
-                     <span class="proj-meta">Python</span>
-                  </p>
-               </div>
-
-               <div class="proj-card">
-                  <h3>PhIP-Seq analysis pipeline <span class="proj-badge">Larman Lab &middot; not public</span></h3>
-                  <p class="proj-desc">
-                     Production PhIP-Seq pipeline, which I run and maintain. Takes demultiplexed sequencing reads
-                     through alignment, QC, enrichment testing, hit calling, and reactivity scoring.
-                  </p>
-                  <p class="proj-links">
-                     <span class="proj-meta">R &middot; Bash &middot; SLURM</span>
-                  </p>
-               </div>
-
-               <div class="proj-card">
-                  <h3>PhIPmake2</h3>
-                  <p class="proj-desc">
-                     A memory-bounded R rewrite of the PhIP-Seq pipeline's summarisation step. Collapses peptide-level
-                     counts to proteins and joins annotations; a drop-in replacement for the original.
-                  </p>
-                  <p class="proj-links">
-                     <a href="https://github.com/avinashkarkada/PhIPmake2" target="_blank" rel="noopener">Repository</a>
-                     <span class="proj-meta">R</span>
-                  </p>
-               </div>
-
-               <div class="proj-card">
-                  <h3>InFlux pipeline</h3>
-                  <p class="proj-desc">
-                     Snakemake and SLURM workflow for the InFlux influenza neutralization assay, covering read
-                     processing, QC, quantification, titration modeling, and neutralization curves.
-                  </p>
-                  <p class="proj-links">
-                     <a href="https://github.com/avinashkarkada/Influx_pipeline" target="_blank" rel="noopener">Repository</a>
-                     <span class="proj-meta">Python &middot; Snakemake</span>
-                  </p>
-               </div>
-
-               <div class="proj-card">
-                  <h3>ARscape (groupwise)</h3>
-                  <p class="proj-desc">
-                     Extension of the PhIP-Seq pipeline's reactivity scoring, which scores whole organisms or peptide
-                     groups rather than single peptides, with support for groupwise comparisons.
-                  </p>
-                  <p class="proj-links">
-                     <a href="https://github.com/avinashkarkada/ARscape-Groupwise" target="_blank" rel="noopener">Repository</a>
-                     <span class="proj-meta">R</span>
-                  </p>
-               </div>
-
-               <div class="proj-card">
-                  <h3>Influenza Antigenic Cartography</h3>
-                  <p class="proj-desc">
-                     Python and Bash pipeline that builds 2D antigenic maps for H1N1 and H3N2 from neutralization
-                     data using multidimensional scaling.
-                  </p>
-                  <p class="proj-links">
-                     <a href="https://github.com/avinashkarkada/Influenza_Antigenic_Cartography" target="_blank" rel="noopener">Repository</a>
-                     <span class="proj-meta">Python</span>
-                  </p>
-               </div>
-
-               <div class="proj-card">
-                  <h3>Immune-cell trial dashboard</h3>
-                  <p class="proj-desc">
-                     Models longitudinal immune-cell frequencies from a clinical-trial dataset in a SQLite schema
-                     and serves responder comparisons through an interactive dashboard.
-                  </p>
-                  <p class="proj-links">
-                     <a href="https://github.com/avinashkarkada/trial-data-dashboard" target="_blank" rel="noopener">Repository</a>
-                     <span class="proj-meta">Python &middot; SQLite</span>
-                  </p>
-               </div>
-
-               <div class="proj-card">
-                  <h3>PhIP-Seq-Pipeline-Installer</h3>
-                  <p class="proj-desc">
-                     Shell scripts that reproduce the PhIP-Seq pipeline's dependency stack on a clean machine.
-                  </p>
-                  <p class="proj-links">
-                     <a href="https://github.com/avinashkarkada/PhIP-Seq-Pipeline-Installer" target="_blank" rel="noopener">Repository</a>
-                     <span class="proj-meta">Shell</span>
-                  </p>
-               </div>
-
-               <div class="proj-card">
-                  <h3>GROMACS-COLAB</h3>
-                  <p class="proj-desc">
-                     Jupyter notebooks for running GROMACS molecular dynamics simulations in Colab.
-                  </p>
-                  <p class="proj-links">
-                     <a href="https://github.com/avinashkarkada/GROMACS-COLAB" target="_blank" rel="noopener">Repository</a>
-                     <span class="proj-meta">Jupyter Notebook</span>
-                  </p>
-               </div>
-
-            </div>
-
-            <div class="proj-misc">
-               <h3>Smaller tools</h3>
-               <ul class="misc-list">
-                  <li><a href="https://github.com/avinashkarkada/MSA-Gap-Analyzer" target="_blank" rel="noopener">MSA-Gap-Analyzer</a>
-                     &mdash; generates and optimizes multiple sequence alignments by gap profile.</li>
-                  <li><a href="https://github.com/avinashkarkada/Modeller-scripts" target="_blank" rel="noopener">MODELLER-GUI</a>
-                     &mdash; Tkinter front end that simplifies MODELLER homology-modeling workflows.</li>
-                  <li><a href="https://github.com/avinashkarkada/pdbqt_maker" target="_blank" rel="noopener">pdbqt_maker</a>
-                     &mdash; converts SDF, PDB, and MOL2 files to PDBQT for docking.</li>
-                  <li><a href="https://github.com/avinashkarkada/RMSD-RMSF-graph-plotter" target="_blank" rel="noopener">RMSD/RMSF graph plotter</a>
-                     &mdash; GUI for plotting RMSD and RMSF directly from GROMACS <code>.xvg</code> output.</li>
-                  <li><a href="https://github.com/avinashkarkada/PCA-FEL" target="_blank" rel="noopener">PCA-FEL</a>
-                     &mdash; principal component analysis and free-energy landscape plots from MD trajectories.</li>
-               </ul>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!-- Software Section End -->
-
-
-   <!-- Skills Section
-   ================================================== -->
-   <section id="skills">
-      <div class="row skill">
-         <div class="three columns header-col">
-            <h1><span>Skills</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-            <div class="section-grid">
-               <div class="info-card">
-                  <h3>Programming and Platforms</h3>
-                  <div class="tag-list">
-                     <span class="tag">Python</span>
-                     <span class="tag">R</span>
-                     <span class="tag">Bash</span>
-                     <span class="tag">SQL</span>
-                     <span class="tag">Java</span>
-                     <span class="tag">Git</span>
-                     <span class="tag">GitHub</span>
-                     <span class="tag">Linux</span>
-                     <span class="tag">Unix</span>
-                     <span class="tag">HPC</span>
-                     <span class="tag">SLURM</span>
-                     <span class="tag">AWS</span>
-                     <span class="tag">EC2</span>
-                     <span class="tag">S3</span>
-                     <span class="tag">Conda</span>
-                     <span class="tag">Mamba</span>
-                     <span class="tag">Jupyter</span>
-                  </div>
-               </div>
-
-               <div class="info-card">
-                  <h3>Bioinformatics, NGS, and Omics</h3>
-                  <div class="tag-list">
-                     <span class="tag">PhIP-seq</span>
-                     <span class="tag">RNA-seq</span>
-                     <span class="tag">scRNA-seq</span>
-                     <span class="tag">ChIP-seq</span>
-                     <span class="tag">WGS</span>
-                     <span class="tag">Biopython</span>
-                     <span class="tag">Bioconductor</span>
-                     <span class="tag">SAMtools</span>
-                     <span class="tag">BCFtools</span>
-                     <span class="tag">BEDTools</span>
-                     <span class="tag">Bowtie</span>
-                     <span class="tag">Bowtie2</span>
-                     <span class="tag">BWA</span>
-                     <span class="tag">Minimap2</span>
-                     <span class="tag">Kallisto</span>
-                     <span class="tag">Salmon</span>
-                     <span class="tag">STAR</span>
-                     <span class="tag">HISAT2</span>
-                     <span class="tag">Cutadapt</span>
-                     <span class="tag">Trimmomatic</span>
-                     <span class="tag">FastQC</span>
-                     <span class="tag">GATK</span>
-                     <span class="tag">IGV</span>
-                     <span class="tag">SRA Toolkit</span>
-                     <span class="tag">BLAST</span>
-                     <span class="tag">Clustal Omega</span>
-                     <span class="tag">MAFFT</span>
-                     <span class="tag">EMBOSS</span>
-                     <span class="tag">CD-HIT</span>
-                     <span class="tag">HMMER</span>
-                     <span class="tag">edgeR</span>
-                     <span class="tag">DESeq2</span>
-                     <span class="tag">limma</span>
-                     <span class="tag">Seurat</span>
-                     <span class="tag">Scanpy</span>
-                     <span class="tag">MEGA</span>
-                     <span class="tag">IQ-TREE</span>
-                     <span class="tag">Comparative genomics</span>
-                     <span class="tag">Genome informatics</span>
-                     <span class="tag">Epitope mapping</span>
-                  </div>
-               </div>
-
-               <div class="info-card">
-                  <h3>Computational Biology and Data Science</h3>
-                  <div class="tag-list">
-                     <span class="tag">pandas</span>
-                     <span class="tag">NumPy</span>
-                     <span class="tag">SciPy</span>
-                     <span class="tag">scikit-learn</span>
-                     <span class="tag">XGBoost</span>
-                     <span class="tag">dplyr</span>
-                     <span class="tag">tidyr</span>
-                     <span class="tag">randomForest</span>
-                     <span class="tag">SVM</span>
-                     <span class="tag">LASSO</span>
-                     <span class="tag">PCA</span>
-                     <span class="tag">UMAP</span>
-                     <span class="tag">t-SNE</span>
-                     <span class="tag">Clustering</span>
-                     <span class="tag">Differential expression</span>
-                     <span class="tag">Enrichment analysis</span>
-                     <span class="tag">Pathway analysis</span>
-                     <span class="tag">Network analysis</span>
-                     <span class="tag">Sequence-space analysis</span>
-                  </div>
-               </div>
-
-               <div class="info-card">
-                  <h3>Workflow and Reproducibility</h3>
-                  <div class="tag-list">
-                     <span class="tag">Snakemake</span>
-                     <span class="tag">Latch</span>
-                     <span class="tag">Docker</span>
-                     <span class="tag">Singularity</span>
-                  </div>
-               </div>
-
-               <div class="info-card">
-                  <h3>Structural Biology, Docking, and Molecular Modeling</h3>
-                  <div class="tag-list">
-                     <span class="tag">PyMOL</span>
-                     <span class="tag">UCSF ChimeraX</span>
-                     <span class="tag">Chimera</span>
-                     <span class="tag">VMD</span>
-                     <span class="tag">MODELLER</span>
-                     <span class="tag">AlphaFold</span>
-                     <span class="tag">ESMFold</span>
-                     <span class="tag">Rosetta</span>
-                     <span class="tag">HADDOCK</span>
-                     <span class="tag">AutoDock</span>
-                     <span class="tag">AutoDock Vina</span>
-                     <span class="tag">GROMACS</span>
-                     <span class="tag">AMBER</span>
-                     <span class="tag">gmx_MMPBSA</span>
-                     <span class="tag">FoldX</span>
-                     <span class="tag">Maestro</span>
-                     <span class="tag">Schrödinger</span>
-                     <span class="tag">CP2K</span>
-                     <span class="tag">Gaussian</span>
-                     <span class="tag">ORCA</span>
-                     <span class="tag">RDKit</span>
-                     <span class="tag">Open Babel</span>
-                     <span class="tag">Molecular dynamics</span>
-                     <span class="tag">Protein structure prediction</span>
-                     <span class="tag">Structural mapping</span>
-                     <span class="tag">Virtual screening</span>
-                     <span class="tag">Free energy analysis</span>
-                     <span class="tag">MM/PBSA</span>
-                     <span class="tag">ADMET</span>
-                     <span class="tag">Protein-protein docking</span>
-                     <span class="tag">Protein-ligand docking</span>
-                     <span class="tag">Protein-DNA docking</span>
-                     <span class="tag">Nucleic acid docking</span>
-                     <span class="tag">Binder design</span>
-                  </div>
-               </div>
-
-               <div class="info-card">
-                  <h3>Visualization and Reporting</h3>
-                  <div class="tag-list">
-                     <span class="tag">ggplot2</span>
-                     <span class="tag">plotly</span>
-                     <span class="tag">GraphPad Prism</span>
-                     <span class="tag">BioRender</span>
-                     <span class="tag">LaTeX</span>
-                     <span class="tag">R Markdown</span>
-                     <span class="tag">Quarto</span>
-                     <span class="tag">Shiny</span>
-                     <span class="tag">Dash</span>
-                     <span class="tag">Cytoscape</span>
-                     <span class="tag">UCSC Genome Browser</span>
-                     <span class="tag">Ensembl Genome Browser</span>
-                  </div>
-               </div>
-
-               <div class="info-card">
-                  <h3>Wet Lab Techniques</h3>
-                  <div class="tag-list">
-                     <span class="tag">Bacterial cell culture</span>
-                     <span class="tag">Agarose gel electrophoresis</span>
-                     <span class="tag">PCR</span>
-                     <span class="tag">SDS-PAGE</span>
-                     <span class="tag">Western blot</span>
-                     <span class="tag">Sample handling and QC</span>
-                     <span class="tag">Basic ELISA handling</span>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!-- Skills Section End -->
-
-   <!-- Certificates & Relevant Courses Section
-   ================================================== -->
-   <section id="certificates">
-      <div class="row work">
-         <div class="three columns header-col">
-            <h1><span>Certificates</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-            <div class="cert-block">
-               <h3>Certificates</h3>
-               <div class="cert-grid">
-                  <div class="cert-item"><span class="cert-title">Epigenetic Control of Gene Expression</span><span class="cert-org">University of Melbourne</span></div>
-                  <div class="cert-item"><span class="cert-title">SARS-CoV-2 Protein Modeling and Drug Docking</span><span class="cert-org">Coursera Project Network</span></div>
-                  <div class="cert-item"><span class="cert-title">Algorithms for DNA Sequencing</span><span class="cert-org">Johns Hopkins University</span></div>
-                  <div class="cert-item"><span class="cert-title">Drug Discovery</span><span class="cert-org">UC San Diego</span></div>
-                  <div class="cert-item"><span class="cert-title">Python for Genomic Data Science</span><span class="cert-org">Johns Hopkins University</span></div>
-                  <div class="cert-item"><span class="cert-title">Introduction to Genomic Technologies</span><span class="cert-org">Johns Hopkins University</span></div>
-                  <div class="cert-item"><span class="cert-title">Introduction to the Biology of Cancer</span><span class="cert-org">Johns Hopkins University</span></div>
-                  <div class="cert-item"><span class="cert-title">Summer School on Machine Learning in Bioinformatics</span><span class="cert-org">HSE University</span></div>
-                  <div class="cert-item"><span class="cert-title">Antibody Purification</span><span class="cert-org">Siddaganga Institute of Technology</span></div>
-                  <div class="cert-item"><span class="cert-title">Artificial Intelligence in Drug Discovery</span><span class="cert-org">CSIR-NEIST</span></div>
-                  <div class="cert-item"><span class="cert-title">Technical Hands-On Workshop, Molecular Docking</span><span class="cert-org">BDG Lifesciences</span></div>
-               </div>
-            </div>
-
-            <div class="course-block">
-               <h3>Relevant Courses</h3>
-               <div class="course-tags">
-                  <span class="course-tag">Introduction to Bioinformatics</span>
-                  <span class="course-tag">Algorithms for Bioinformatics</span>
-                  <span class="course-tag">Applied Machine Learning</span>
-                  <span class="course-tag">Artificial Intelligence</span>
-                  <span class="course-tag">Gene Expression Data Analysis and Visualization</span>
-                  <span class="course-tag">Protein Bioinformatics</span>
-                  <span class="course-tag">Practical Computer Concepts for Bioinformatics</span>
-                  <span class="course-tag">Molecular Basis of Pharmacology</span>
-                  <span class="course-tag">Molecular Biology</span>
-                  <span class="course-tag">Epigenetics, Gene Organization and Expression</span>
-                  <span class="course-tag">Genomic and Personalized Medicine</span>
-                  <span class="course-tag">Biostatistics and Biomodelling</span>
-                  <span class="course-tag">Biochemistry</span>
-                  <span class="course-tag">Microbiology</span>
-                  <span class="course-tag">Genetics and Genetic Engineering</span>
-                  <span class="course-tag">Immunology and Immunotechnology</span>
-                  <span class="course-tag">Biomolecular Simulations</span>
-                  <span class="course-tag">Programming with Python</span>
-                  <span class="course-tag">Genomics and Proteomics Data Analytics</span>
-                  <span class="course-tag">Enzyme Technology</span>
-                  <span class="course-tag">Clinical Trials and Data Management</span>
-                  <span class="course-tag">Biopharmaceuticals and Regulatory Affairs</span>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!-- Certificates & Relevant Courses Section End -->
-
-   <!-- Publications Section
-   ================================================== -->
-   <section id="publications">
-      <div class="row publications">
-         <div class="three columns header-col">
-            <h1><span>Publications</span></h1>
-         </div><!-- .three.columns.header-col -->
-
-         <div class="nine columns main-col">
-            <div class="row item">
-               <div class="twelve columns">
-
-                  <!-- 1. Decoding non-human mammalian adaptive signatures... -->
-                  <h4 class="pub-heading">
-                     Decoding non-human mammalian adaptive signatures of 2.3.4.4b H5N1 to assess its human adaptive potential
-                  </h4>
-                  <p>Microbiology Spectrum</p>
-                  <p>
-                     DOI:
-                     <a href="https://doi.org/10.1128/spectrum.00948-25" target="_blank">
-                        https://doi.org/10.1128/spectrum.00948-25
-                     </a>
-                  </p>
-                  <hr/>
-
-                  <!-- 2. Bat RNA viruses employ viral RHIMs... -->
-                  <h4 class="pub-heading">
-                     Bat RNA viruses employ viral RHIMs orchestrating species-specific cell death programs linked to Z-RNA sensing and ZBP1-RIPK3 signaling
-                  </h4>
-                  <p>Cell iScience</p>
-                  <p>
-                     DOI:
-                     <a href="https://doi.org/10.1016/j.isci.2024.111444" target="_blank">
-                        https://doi.org/10.1016/j.isci.2024.111444
-                     </a>
-                  </p>
-                  <hr/>
-
-                  <!-- 3. Computational-driven discovery of AI-2 quorum sensing inhibitor... -->
-                  <h4 class="pub-heading">
-                     Computational-driven discovery of AI-2 quorum sensing inhibitor targeting the 5′-methylthioadenosine/S-adenosylhomocysteine nucleosidase (MTAN) 
-                     to combat drug-resistant <em>Helicobacter pylori</em>
-                  </h4>
-                  <p>Computers in Biology and Medicine</p>
-                  <p>
-                     PMID: 39536388 | DOI:
-                     <a href="https://doi.org/10.1016/j.compbiomed.2024.109409" target="_blank">
-                        https://doi.org/10.1016/j.compbiomed.2024.109409
-                     </a>
-                  </p>
-                  <hr/>
-
-                  <!-- 4. Anti-enzymatic and DNA docking studies of montelukast... -->
-                  <h4 class="pub-heading">
-                     Anti-enzymatic and DNA docking studies of montelukast: A multifaceted molecular scaffold 
-                     with in vitro investigations, molecular expression analysis and molecular dynamics simulations
-                  </h4>
-                  <p>Cell Heliyon</p>
-                  <p>
-                     PMID: 38298631 | DOI:
-                     <a href="https://doi.org/10.1016/j.heliyon.2024.e24470" target="_blank">
-                        https://doi.org/10.1016/j.heliyon.2024.e24470
-                     </a>
-                  </p>
-                  <hr/>
-
-                  <!-- 5. Antiurease Activity of Antibiotics... -->
-                  <h4 class="pub-heading">
-                     Antiurease Activity of Antibiotics: In Vitro, In Silico, Structure Activity Relationship, 
-                     and MD Simulations of Cephalosporins and Fluoroquinolones
-                  </h4>
-                  <p>ACS Omega</p>
-                  <p>
-                     PMID: 38559955 | DOI:
-                     <a href="https://doi.org/10.1021/acsomega.3c09355" target="_blank">
-                        https://doi.org/10.1021/acsomega.3c09355
-                     </a>
-                  </p>
-                  <hr/>
-
-                  <!-- 6. Nrf2-regulated antioxidant response ameliorating ionizing radiation-induced damages... -->
-                  <h4 class="pub-heading">
-                     Nrf2-regulated antioxidant response ameliorating ionizing radiation-induced damages 
-                     explored through in vitro and molecular dynamics simulations
-                  </h4>
-                  <p>Journal of Biomolecular Structure and Dynamics</p>
-                  <p>
-                     PMID: 36307909 | DOI:
-                     <a href="https://doi.org/10.1080/07391102.2022.2137245" target="_blank">
-                        https://doi.org/10.1080/07391102.2022.2137245
-                     </a>
-                  </p>
-                  <hr/>
-
-                  <!-- 7. System-level protein interaction network analysis... -->
-                  <h4 class="pub-heading">
-                     System-level protein interaction network analysis and molecular dynamics study reveal 
-                     interaction of ferulic acid with PTGS2 as a natural radioprotector
-                  </h4>
-                  <p>Journal of Biomolecular Structure and Dynamics</p>
-                  <p>
-                     PMID: 37144749 | DOI:
-                     <a href="https://doi.org/10.1080/07391102.2023.2208224" target="_blank">
-                        https://doi.org/10.1080/07391102.2023.2208224
-                     </a>
-                  </p>
-                  <hr/>
-
-                  <!-- 8. High-throughput screening and molecular dynamics simulations... -->
-                  <h4 class="pub-heading">
-                     High-throughput screening and molecular dynamics simulations of natural products targeting 
-                     LuxS/AI-2 system as a novel antibacterial strategy for antibiotic resistance in 
-                     <em>Helicobacter pylori</em>
-                  </h4>
-                  <p>Journal of Biomolecular Structure and Dynamics</p>
-                  <p>
-                     PMID: 37160706 | DOI:
-                     <a href="https://doi.org/10.1080/07391102.2023.2210674" target="_blank">
-                        https://doi.org/10.1080/07391102.2023.2210674
-                     </a>
-                  </p>
-                  <hr/>
-
-                  <!-- 9. A combined in vitro and molecular dynamics simulation studies... -->
-                  <h4 class="pub-heading">
-                     A combined in vitro and molecular dynamics simulation studies unveil the molecular basis 
-                     of the anticancer potential of piperine targeting AKT1 against prostate cancer
-                  </h4>
-                  <p>Journal of Biomolecular Structure and Dynamics</p>
-                  <p>
-                     PMID: 37272194 | DOI:
-                     <a href="https://doi.org/10.1080/07391102.2023.2220045" target="_blank">
-                        https://doi.org/10.1080/07391102.2023.2220045
-                     </a>
-                  </p>
-                  <hr/>
-
-                  <!-- 10. Exploration of 4-tolyl-5-(p-tolyloxymethyl)-4H-1,2,4-triazole thioethers... -->
-                  <h4 class="pub-heading">
-                     Exploration of 4-tolyl-5-(p-tolyloxymethyl)-4H-1,2,4-triazole thioethers 
-                     as potent 15-LOX inhibitors supported by in vitro, in silico, MD simulation 
-                     and DNA binding studies
-                  </h4>
-                  <p>Journal of Molecular Structure</p>
-                  <p>
-                     DOI:
-                     <a href="https://doi.org/10.1016/j.molstruc.2024.139963" target="_blank">
-                        https://doi.org/10.1016/j.molstruc.2024.139963
-                     </a>
-                  </p>
-                  <hr/>
-
-                  <!-- 11. Glutamic acid-catalyzed synthesis of dihydroquinazolinone... -->
-                  <h4 class="pub-heading">
-                     Glutamic acid-catalyzed synthesis of dihydroquinazolinone: anticancer activity, 
-                     electrochemical behavior, molecular docking, dynamics, simulations and drug-likeness studies
-                  </h4>
-                  <p>Research on Chemical Intermediates</p>
-                  <p>
-                     DOI:
-                     <a href="https://doi.org/10.1007/s11164-024-05305-6" target="_blank">
-                        https://doi.org/10.1007/s11164-024-05305-6
-                     </a>
-                  </p>
-                  <hr/>
-
-                  <!-- 12. Multimodal evaluation of lipoxygenase-targeting NSAIDs... -->
-                  <h4 class="pub-heading">
-                     Multimodal evaluation of lipoxygenase-targeting NSAIDs using integrated in vitro, SAR, in silico, 
-                     cytotoxicity towards MCF-7 cell line, DNA docking and MD simulation approaches
-                  </h4>
-                  <p>International Journal of Biological Macromolecules</p>
-                  <p>
-                     PMID: 40316117 | DOI:
-                     <a href="https://doi.org/10.1016/j.ijbiomac.2025.143665" target="_blank">
-                        https://doi.org/10.1016/j.ijbiomac.2025.143665
-                     </a>
-                  </p>
-
-               </div><!-- .twelve.columns -->
-            </div><!-- .row.item -->
-         </div><!-- .nine.columns.main-col -->
-      </div><!-- .row.publications -->
-   </section>
-   <!-- Publications section end -->
-
-   <!-- Awards & Service Section
-   ================================================== -->
-   <section id="awards">
-      <div class="row awards">
-         <div class="three columns header-col">
-            <h1><span>Awards &amp; Service</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-            <ul class="award-list">
-               <li><strong>Peer reviewer</strong> for <em>Nature Communications</em>, <em>Journal of Crohn's and Colitis</em>,
-                  <em>Journal of Biomolecular Structure and Dynamics</em>, and
-                  <em>International Journal of Biological Macromolecules</em>.</li>
-               <li><strong>Paper presentation</strong>, Immunology 2025 (AAI Annual Meeting).</li>
-               <li><strong>Best Paper Presentation</strong>, JAIVIK 2022.</li>
-               <li><strong>Best Undergraduate Thesis</strong> for work on SAICAR synthase molecular dynamics.</li>
-               <li><strong>Mentoring</strong> students in practical bioinformatics, molecular dynamics, and NGS analysis.</li>
+          </div>
+          <div>
+            <h3 class="sub">Awards &amp; Service</h3>
+            <ul class="awards">
+              <li><strong>Peer reviewer</strong> for <em>Nature Communications</em>, <em>Journal of Crohn's and Colitis</em>, <em>Journal of Biomolecular Structure and Dynamics</em>, and <em>International Journal of Biological Macromolecules</em>.</li>
+              <li><strong>Paper presentation</strong>, Immunology 2025 (AAI Annual Meeting).</li>
+              <li><strong>Best Paper Presentation</strong>, JAIVIK 2022.</li>
+              <li><strong>Best Undergraduate Thesis</strong> for work on SAICAR synthase molecular dynamics.</li>
+              <li><strong>Mentoring</strong> students in practical bioinformatics, molecular dynamics, and NGS analysis.</li>
             </ul>
-         </div>
+          </div>
+        </div>
+
+        <details class="fold">
+          <summary>Certificates<span class="fold-n">11</span><svg class="ico"><use href="#i-chev"/></svg></summary>
+          <ul class="certs">
+            <li>Epigenetic Control of Gene Expression<span>University of Melbourne</span></li>
+            <li>SARS-CoV-2 Protein Modeling and Drug Docking<span>Coursera Project Network</span></li>
+            <li>Algorithms for DNA Sequencing<span>Johns Hopkins University</span></li>
+            <li>Drug Discovery<span>UC San Diego</span></li>
+            <li>Python for Genomic Data Science<span>Johns Hopkins University</span></li>
+            <li>Introduction to Genomic Technologies<span>Johns Hopkins University</span></li>
+            <li>Introduction to the Biology of Cancer<span>Johns Hopkins University</span></li>
+            <li>Summer School on Machine Learning in Bioinformatics<span>HSE University</span></li>
+            <li>Antibody Purification<span>Siddaganga Institute of Technology</span></li>
+            <li>Artificial Intelligence in Drug Discovery<span>CSIR-NEIST</span></li>
+            <li>Technical Hands-On Workshop, Molecular Docking<span>BDG Lifesciences</span></li>
+          </ul>
+        </details>
+        <details class="fold">
+          <summary>Relevant Courses<span class="fold-n">22</span><svg class="ico"><use href="#i-chev"/></svg></summary>
+          <ul class="skill-list courses"><li>Introduction to Bioinformatics</li><li>Algorithms for Bioinformatics</li><li>Applied Machine Learning</li><li>Artificial Intelligence</li><li>Gene Expression Data Analysis and Visualization</li><li>Protein Bioinformatics</li><li>Practical Computer Concepts for Bioinformatics</li><li>Molecular Basis of Pharmacology</li><li>Molecular Biology</li><li>Epigenetics, Gene Organization and Expression</li><li>Genomic and Personalized Medicine</li><li>Biostatistics and Biomodelling</li><li>Biochemistry</li><li>Microbiology</li><li>Genetics and Genetic Engineering</li><li>Immunology and Immunotechnology</li><li>Biomolecular Simulations</li><li>Programming with Python</li><li>Genomics and Proteomics Data Analytics</li><li>Enzyme Technology</li><li>Clinical Trials and Data Management</li><li>Biopharmaceuticals and Regulatory Affairs</li></ul>
+        </details>
       </div>
-   </section>
-   <!-- Awards & Service Section End -->
+    </section>
 
-   <!-- Contact Section
-   ================================================== -->
-   <section id="contact">
-      <div class="row section-head">
-         <div class="three columns header-col">
-            <h1><span>Get in touch</span></h1>
-         </div>
-
-         <div class="nine columns">
-            <p class="lead">
-               Happy to hear about new projects, roles, or collaborations. Email is the best way to reach me.
-            </p>
-            <p style="margin-top:18px;">
-               <a class="contact-email" href="mailto:avikarkada@gmail.com">avikarkada@gmail.com</a>
-            </p>
-            <ul class="contact-links">
-               <li><a href="https://scholar.google.com/citations?user=KitPr8YAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
-               <li><a href="https://github.com/avinashkarkada" target="_blank" rel="noopener">GitHub</a></li>
-               <li><a href="https://www.linkedin.com/in/avinash-karkada/" target="_blank" rel="noopener">LinkedIn</a></li>
-               <li><a href="https://orcid.org/0000-0001-6604-3351" target="_blank" rel="noopener">ORCID</a></li>
-               <li><a href="files/Avinash_Karkada_Ashok_CV.pdf" download>Download CV</a></li>
-            </ul>
-         </div>
+    <!-- ============================== Contact ============================== -->
+    <section class="section section--contact" id="contact">
+      <div class="wrap">
+        <header class="sec-head"><span class="sec-num">08</span><h2>Get in touch</h2></header>
+        <p class="contact-lead">Happy to hear about new projects, roles, or collaborations. Email is the best way to reach me.</p>
+        <div class="contact-row">
+          <a class="btn btn--primary btn--lg" href="mailto:avikarkada@gmail.com"><svg class="ico"><use href="#i-mail"/></svg>avikarkada@gmail.com</a>
+          <button type="button" class="btn btn--lg" data-copy-text="avikarkada@gmail.com"><svg class="ico"><use href="#i-copy"/></svg><span>Copy address</span></button>
+        </div>
+        <ul class="links links--lg">
+          <li><a href="https://scholar.google.com/citations?user=KitPr8YAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar<svg class="ico"><use href="#i-out"/></svg></a></li>
+          <li><a href="https://github.com/avinashkarkada" target="_blank" rel="noopener">GitHub<svg class="ico"><use href="#i-out"/></svg></a></li>
+          <li><a href="https://www.linkedin.com/in/avinash-karkada/" target="_blank" rel="noopener">LinkedIn<svg class="ico"><use href="#i-out"/></svg></a></li>
+          <li><a href="https://orcid.org/0000-0001-6604-3351" target="_blank" rel="noopener">ORCID<svg class="ico"><use href="#i-out"/></svg></a></li>
+          <li><a href="files/Avinash_Karkada_Ashok_CV.pdf" download>Download CV<svg class="ico"><use href="#i-down"/></svg></a></li>
+        </ul>
       </div>
-   </section>
-   <!-- Contact Section End -->
+    </section>
+  </main>
 
-   <!-- Footer
-   ================================================== -->
-   <footer>
-      <div class="row">
-         <div id="go-top">
-            <a class="smoothscroll" title="Back to Top" href="#home">
-               <i class="icon-up-open"></i>
-            </a>
-         </div>
-      </div>
-   </footer> 
-   <!-- Footer End-->
+  <footer class="footer">
+    <div class="wrap footer-in">
+      <p>© <span id="year">2026</span> Avinash Karkada Ashok</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
 
-   <!-- JavaScript
-   ================================================== -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>
-      window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')
-   </script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/init.js"></script>
+  <!-- Quick navigation -->
+  <dialog class="palette" id="palette" aria-label="Quick navigation">
+    <div class="palette-in">
+      <label class="search"><svg class="ico"><use href="#i-search"/></svg><span class="vh">Jump to</span><input type="text" id="palette-input" placeholder="Jump to a section, link or action" autocomplete="off" role="combobox" aria-expanded="true" aria-controls="palette-list" aria-autocomplete="list"></label>
+      <ul class="palette-list" id="palette-list" role="listbox"></ul>
+      <p class="palette-hint"><kbd>↑</kbd><kbd>↓</kbd> to move · <kbd>Enter</kbd> to go · <kbd>Esc</kbd> to close</p>
+    </div>
+  </dialog>
 
+  <div class="tip" id="tip" role="tooltip" hidden></div>
+
+  <script src="js/data-ha.js" defer></script>
+  <script src="js/kit.js" defer></script>
+  <script src="js/site.js" defer></script>
+  <script src="js/fig-ha.js" defer></script>
+  <script src="js/fig-levels.js" defer></script>
+  <script src="js/fig-platform.js" defer></script>
+  <script src="js/fig-hascan.js" defer></script>
+  <script src="js/fig-epitope.js" defer></script>
+  <script src="js/fig-dag.js" defer></script>
+  <script src="js/fig-4pl.js" defer></script>
+  <script src="js/fig-mds.js" defer></script>
+  <script src="js/fig-fel.js" defer></script>
 </body>
 </html>
